@@ -387,6 +387,56 @@ if( $(".goods_cards_slider").length > 0 ) {
       });
     }
 
+    if( $(".slider_3").length > 0 ) {
+      $(".slider_3").not(".slick-initialized").slick({
+          dots: true,
+          arrows: true,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true
+      });
+    }
+
+    // --------
+
+    if($("#map").length > 0) {
+      ymaps.ready(function () {        
+          var myMap = new ymaps.Map('map', {
+              center: [55.755814, 37.617635],
+              zoom: 14
+          }, {
+              searchControlProvider: 'yandex#search'
+          });
+          myPlacemark1 = new ymaps.Placemark([55.755814, 37.617635], {
+              hintContent: ''
+          }, {
+              // iconLayout: 'default#imageWithContent',
+              // iconImageHref: 'img/yellow_marker.png',
+              // iconImageSize: [39, 35],
+              // iconImageOffset: [19, -17]
+          });
+          myMap.geoObjects.add(myPlacemark1);        
+      });
+    }
+
+    // ---------
+
+    if( $(".slider_4").length > 0 ) {
+      $(".slider_4").not(".slick-initialized").slick({
+          dots: true,
+          arrows: false,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          fade: true
+      });
+    }
+
   // if( $(".portfolio_slider").length > 0 ) {
   //     $(".portfolio_slider").not(".slick-initialized").slick({
   //         dots: true,

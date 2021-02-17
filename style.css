@@ -3492,6 +3492,153 @@ textarea:focus {
 
 /*-- /Section 8 - Main Page --*/
 
+/*-- Section 9 - Main Page --*/
+
+.three_cols {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.three_cols .col {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.three_cols .col:nth-child(3) {
+    padding-left: 40px;
+}
+
+.info_box {
+
+}
+
+.title_3 {
+    padding-bottom: 20px;
+}
+
+.title_3 h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    color: #222B45;
+}
+
+.slider_3_wrapp {
+
+}
+
+.slider_3 .slick-arrow {
+    margin-top: -21px;
+}
+
+.slider_3 .slick-dots {
+    width: 100%;
+    position: absolute;
+    bottom: 29px;
+    left: 0;
+}
+
+.thumb_4 {
+    background: #F8F9FA;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 22px 10px 53px 10px;
+    min-height: 200px;
+}
+
+.logo_thumb {
+    height: 65px;
+    position: relative;
+}
+
+.logo_thumb img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.rate_wrapp {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.rate_wrapp:before {
+    display: inline-block;
+    vertical-align: top;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-image: url(img/orange_star.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rate_wrapp p {
+    display: inline-block;
+    vertical-align: top;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+    color: #222B45;
+}
+
+.more_link_wrapp {
+    padding: 3px 0;
+    text-align: center;
+}
+
+.more_link_wrapp .single_link {
+
+}
+
+.single_link_2_2:after {
+    display: none;
+}
+
+.map {
+    height: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+}
+
+.map .ymaps-copyrights-pane {
+    display: none !important;
+}
+
+.slider_4_wrapp {
+
+}
+
+.slider_4 {
+
+}
+
+.slider_4 .slide_text {
+    padding-bottom: 24px;
+}
+
+.slider_4 .single_link_2 {
+
+}
+
+.slider_4 .slick-dots {
+    margin-top: 10px;
+}
+
+/*-- /Section 9 - Main Page --*/
+
 /*-------------------------------------------*/
 /* ----- FOOTER ------ */
 /*-------------------------------------------*/
