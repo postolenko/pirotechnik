@@ -327,6 +327,66 @@ if( $(".goods_cards_slider").length > 0 ) {
     });
   }
 
+  if( $(".testimonials_slider").length > 0 ) {
+    $(".testimonials_slider").not(".slick-initialized").slick({
+        dots: true,
+        arrows: true,
+        // autoplay: true,
+        autoplaySpeed: 4000,
+        speed: 1200,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        // variableWidth: true,
+        // fade: true,
+        // responsive: [
+        //     {
+        //       breakpoint: 900,
+        //       settings: {
+        //         slidesToShow: 2,
+        //         slidesToScroll: 2
+        //       }
+        //     },
+        //     {
+        //       breakpoint: 540,
+        //       settings: {
+        //         slidesToShow: 1,
+        //         slidesToScroll: 1
+        //       }
+        //     }
+        //   ]
+    });
+  }
+
+    if( $(".news_slider").length > 0 ) {
+      $(".news_slider").not(".slick-initialized").slick({
+          dots: true,
+          arrows: true,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          // variableWidth: true,
+          // fade: true,
+          // responsive: [
+          //     {
+          //       breakpoint: 900,
+          //       settings: {
+          //         slidesToShow: 2,
+          //         slidesToScroll: 2
+          //       }
+          //     },
+          //     {
+          //       breakpoint: 540,
+          //       settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //       }
+          //     }
+          //   ]
+      });
+    }
+
   // if( $(".portfolio_slider").length > 0 ) {
   //     $(".portfolio_slider").not(".slick-initialized").slick({
   //         dots: true,
