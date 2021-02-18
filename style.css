@@ -2340,22 +2340,15 @@ textarea:focus {
 
 /*-- Section 2 - Main Page --*/
 
+.sect_2_mp {
+    padding: 88px 0 20px 0;
+}
+
 .gray_bg {
     background-color: #F8F9FA;
-    /*padding-bottom: 300px;*/
 }
 
 .left_shape {
-    position: relative;
-}
-
-.left_shape:before {
-    width: 670px;
-    height: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 0 -3px;
@@ -2382,10 +2375,6 @@ textarea:focus {
     width: 160px;
     padding: 10px 0 10px 10px;
     text-align: right;
-}
-
-.header_two_cols h2 {
-
 }
 
 .single_link_2 {
@@ -2569,12 +2558,8 @@ textarea:focus {
     z-index: 2;
 }
 
-.goods_cards_slider_wrapp {
-    /*padding: 0 40px;*/
-}
-
 .goods_cards_slider {
-    margin: 0 -5px;
+    margin: 0 -5px -175px -5px;
 }
 
 .goods_cards_slider .slide {
@@ -2583,7 +2568,7 @@ textarea:focus {
 
 .good_thumb_2 {
     width: 226px;
-    padding: 13px 20px 18px 20px;
+    padding: 5px 0 1px 0;
     background: #FFFFFF;
     border: 1px solid #F8F9FA;
     box-shadow: none;
@@ -2610,7 +2595,7 @@ textarea:focus {
 }
 
 .goods_cards_slider .slide .good_thumb_2 {
-    margin: 33px 0 50px 0;
+    margin: 33px 0 225px 0;
 }
 
 .good_thumb_2:hover {
@@ -2631,7 +2616,7 @@ textarea:focus {
 }
 
 .good_thumb_title_2 .tags_list {
-    padding: 19px 20px 5px 20px;
+    padding: 12px 20px 5px 20px;
     justify-content: flex-start;
     -webkit-justify-content: flex-start;
 }
@@ -2645,9 +2630,24 @@ textarea:focus {
     padding: 17px 0 19px 0;
 }
 
-.hover_box {
-    overflow: hidden;
+.inner_z {
+    background: #fff;
+    padding: 0 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.dropdown_footer {
     height: 0;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #F8F9FA;
+    margin-top: -2px;
+    padding: 0 20px 0 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    overflow: hidden;
     -webkit-transition-property: height;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -2669,8 +2669,14 @@ textarea:focus {
     transition-timing-function: ease;
 }
 
-.good_thumb_2:hover .hover_box {
-    height: 50px;
+.good_thumb:hover .dropdown_footer {
+    height: 115px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, .1);    
+}
+
+.good_thumb.active:hover .dropdown_footer {
+    height: 169px;
 }
 
 .buttons_wrapp {
@@ -2745,9 +2751,129 @@ textarea:focus {
     opacity: 1;
 }
 
+.count_box_2 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-property: height;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: height;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: height;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: height;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: height;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.good_thumb_2.active .count_box_2 {
+    height: 54px;
+}
+
+.count_box_2 .count_num {
+    width: calc(100% - 88px);
+}
+
+.count_box_2 .count_num input {
+    height: 44px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 43px;
+    color: #9095A2;
+}
+
+.count_box_2 .count_button_wrapp {
+    width: 44px;
+}
+
+.count_box_2 button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: relative;
+    background: #FD401B;
+}
+
+.count_box_2 .minus_btn {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/minus_2.svg);
+}
+
+.count_box_2 .plus_btn {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(img/plus_2.svg);
+}
+
+.pills_wrapp {
+    height: 50px;
+    position: relative;
+}
+
+.pills_wrapp .pill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition-property: opacity, background, color;
+    -webkit-transition-duration: .3s;
+    -webkit-transition-timing-function: ease;
+
+    -moz-transition-property: opacity, background, color;
+    -moz-transition-duration: .3s;
+    -moz-transition-timing-function: ease;
+
+    -ms-transition-property: opacity, background, color;
+    -ms-transition-duration: .3s;
+    -ms-transition-timing-function: ease;
+
+    -o-transition-property: opacity, background, color;
+    -o-transition-duration: .3s;
+    -o-transition-timing-function: ease;
+
+    transition-property: opacity, background, color;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+}
+
+.pill_1 {
+    opacity: 1;
+    z-index: 2;
+}
+
+.pill_2 {
+    opacity: 0;
+    z-index: 1;
+}
+
+.good_thumb_2.active .pill_1 {
+    opacity: 0;
+    z-index: 1;
+}
+
+.good_thumb_2.active .pill_2 {
+    opacity: 1;
+    z-index: 2;
+}
+
 /*-- /Section 2 - Main Page --*/
 
 /*-- Section 3 - Main Page --*/
+
+.sect_3_mp {
+    padding-top: 104px;
+}
 
 .h2_wrapp {
 
@@ -2899,7 +3025,13 @@ textarea:focus {
 
 /*-- Section 4 - Main Page --*/
 
-.goods_cards_slider_2 .good_thumb_2_2 {
+.sect_4_mp {
+    padding-top: 34px;
+    position: relative;
+    z-index: 2;
+}
+
+/*.goods_cards_slider_2 .good_thumb_2_2 {
     margin: 32px 0 50px 0;
 }
 
@@ -2909,11 +3041,20 @@ textarea:focus {
 
 .good_thumb_2_2 .two_cols_price {
     padding: 17px 0 0px 0;
-}
+}*/
 
 /*-- /Section 4 - Main Page --*/
 
 /*-- Section 5 - Main Page --*/
+
+.sect_5_mp {
+    padding-bottom: 94px;
+    position: relative;
+}
+
+.sect_5_mp:hover {
+    z-index: 3;
+}
 
 .slider_2_wrapp {
 
@@ -2982,6 +3123,10 @@ textarea:focus {
 
 /*-- Section 6 - Main Page --*/
 
+.sect_6_mp {
+    padding: 71px 0;
+}
+
 .blue_bg {
     background-color: #F8F9FA;
 }
@@ -3041,15 +3186,12 @@ textarea:focus {
 
 .testimonial_thumb {
     max-width: 370px;
-    /*min-height: 393px;*/
     background: #FFF;
-    /*margin: 30px 0 50px 0;*/
     padding: 17px 20px 0 20px;
     box-shadow: none;
     overflow: hidden;
     border-radius: 10px;
     -webkit-border-radius: 10px;
-    /*outline: 1px solid red;*/
     -webkit-transition-property: box-shadow;
     -webkit-transition-duration: .3s;
     -webkit-transition-timing-function: ease;
@@ -3103,16 +3245,8 @@ textarea:focus {
     min-height: 166px;
 }
 
-.testimonial_descript p {
-
-}
-
 .testimonial_link {
     padding-bottom: 19px;
-}
-
-.testimonial_link .single_link_2 {
-
 }
 
 .testimonial_footer {
@@ -3123,7 +3257,6 @@ textarea:focus {
     display: flex;
     display: -webkit-flex;
     position: relative;
-    /*outline: 1px solid red;*/
     margin: 0 -20px;
     padding: 20px 20px 16px 20px;
     -webkit-transition-property: background;
@@ -3163,10 +3296,6 @@ textarea:focus {
     top: 32px;
     right: 20px;
 }
-
-/*.testimonial_good {
-    background: #F8F9FA;
-}*/
 
 .testimonial_thumb:hover .testimonial_good {
     background: #F8F9FA;
@@ -3224,6 +3353,10 @@ textarea:focus {
 
 /*-- Section 7 - Main Page --*/
 
+.sect_7_mp {
+    padding: 87px 0 30px 0;
+}
+
 .news_slider_wrapp {
     margin: 31px 0 10px 0;
 }
@@ -3264,7 +3397,6 @@ textarea:focus {
 }
 
 .news_thumb .img_box {
-    /*width: 270px;*/
     height: 200px;    
     background-size: cover;
     background-position: center;
@@ -3292,10 +3424,6 @@ textarea:focus {
 .news_thumb:hover .img_box {
     transform: scale(1.3);
     -webkit-transform: scale(1.3);
-}
-
-.news_thumb .thumb_descript {
-
 }
 
 .news_thumb .thumb_descript h3 {
@@ -3340,6 +3468,10 @@ textarea:focus {
 
 /*-- Section 8 - Main Page --*/
 
+.sect_8_mp {
+    padding: 40px 0 31px;
+}
+
 .two_cols_3 {
     display: flex;
     display: -webkit-flex;
@@ -3355,10 +3487,6 @@ textarea:focus {
 .two_cols_3 .right {
     width: 50%;
     padding: 10px 0 10px 20px;
-}
-
-.two_cols_3 h2 {
-
 }
 
 .thumbnails_3 {
@@ -3415,10 +3543,6 @@ textarea:focus {
     font-size: 15px;
     line-height: 140%;
     color: #222B45;
-}
-
-.video_sect {
-
 }
 
 .video_sect p {
@@ -3494,6 +3618,10 @@ textarea:focus {
 
 /*-- Section 9 - Main Page --*/
 
+.sect_9_mp {
+    padding-bottom: 35px;
+}
+
 .three_cols {
     display: flex;
     display: -webkit-flex;
@@ -3511,15 +3639,12 @@ textarea:focus {
     padding-left: 40px;
 }
 
-.info_box {
-
-}
-
 .title_3 {
     padding-bottom: 20px;
 }
 
-.title_3 h3 {
+.title_3 h3,
+.title_3 h3 a {
     font-weight: 500;
     font-size: 24px;
     line-height: 110%;
