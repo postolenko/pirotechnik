@@ -18,7 +18,7 @@
 
 	<!-- Header -->
 		
-	<header>
+	<header id="header">
 		<div class="header_site">
 			<div class="header_top_row">
 				<div class="row">
@@ -53,7 +53,7 @@
 							</div>
 						</div>
 						<div class="right">
-							<div class="main_nav_wrapp" id="resp_nav">
+							<div class="main_nav_wrapp">
 								<ul class="main_nav">							
 									<li><a href="#">Личный кабинет</a></li>
 									<li><a href="#">Доставка</a></li>
@@ -61,364 +61,662 @@
 									<li><a href="#">Контакты</a></li>
 								</ul>
 							</div>
-							<button class="respmenubtn">
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="header_row_templ">
-				<div class="row">
-					<div class="header_row">
-						<div class="left">
-							<div class="inlines_3">
-								<div class="logo_wrapp">
-									<a href="#" class="logo">
-										<div><img src="img/logo.svg" alt=""></div>
-										<div><img src="img/logo_text.svg" alt=""></div>
-									</a>
-								</div>
-								<div class="catalog_wrapp">
-									<button type="button" class="catalog_btn">Все товары</button>
-									<div class="catalog_menu z_3">
-										<ul>
-											<li>
-												<a href="#">
-													<div class="icon_box">
-														<img src="img/menu_icons/icon_02.svg" alt="" />
-													</div>
-													<div class="text_col">
-														<p>Фонтаны</p>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<div class="icon_box">
-														<img src="img/menu_icons/icon_01.svg" alt="" />
-													</div>
-													<div class="text_col">
-														<p>Батареи салютов</p>
-													</div>
-												</a>
-												<button type="button" class="right_arr"></button>
-												<ul class="sub_menu">
-													<li>
-														<a href="#">Малые</a>
-													</li>
-													<li>
-														<a href="#">Большие</a>
-													</li>
-													<li>
-														<a href="#">Средние</a>
-														<button type="button" class="right_arr"></button>
-														<ul class="sub_menu">
-															<li>
-																<a href="#">Средние 1</a>
-															</li>
-															<li>
-																<a href="#">Средние 2</a>
-															</li>
-															<li>
-																<a href="#">Средние 3</a>
-															</li>
-															<li>
-																<a href="#">Средние 4</a>
-															</li>
-														</ul>
-													</li>
-													<li>
-														<a href="#">Супер-салюты</a>
-													</li>
-												</ul>
-											</li>
-											<li>
-												<a href="#">
-													<div class="icon_box">
-														<img src="img/menu_icons/icon_03.svg" alt="" />
-													</div>
-													<div class="text_col">
-														<p>Цветной дым</p>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<div class="icon_box">
-														<img src="img/menu_icons/icon_04.svg" alt="" />
-													</div>
-													<div class="text_col">
-														<p>Римские свечи</p>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<div class="icon_box">
-														<img src="img/menu_icons/icon_05.svg" alt="" />
-													</div>
-													<div class="text_col">
-														<p>Петарды</p>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<div class="icon_box">
-														<img src="img/menu_icons/icon_06.svg" alt="" />
-													</div>
-													<div class="text_col">
-														<p>Летающие и наземные фейерверки</p>
-													</div>
-												</a>
-											</li>
-											<li>
-												<a href="#">
-													<div class="icon_box">
-														<img src="img/menu_icons/icon_07.svg" alt="" />
-													</div>
-													<div class="text_col">
-														<p>Бенгальские огни и свечи</p>
-													</div>
-												</a>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="search_sect">
-									<div class="search_wrapp">
-										<form>
-											<div class="search_form">
-												<input type="text" class="search_input" placeholder="Поиск среди 2000+ товаров" />
-												<button type="button" class="reset_btn" id="resetBtn"></button>
-												<button type="submit" class="serch_btn" id="searchBtn"></button>
-											</div>
-										</form>
-									</div>
-									<div class="search_result z_3">
-										<div class="search_result_title">
-											<h3>Найдено товаров: 4</h3>
-										</div>
-										<a href="#" class="search_item">
-											<div>
-												<div class="img_box">
-													<img src="img/image_01.jpg" alt="" />
-												</div>
-											</div>
-											<div>
-												<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
-												<p class="price">4000 р.</p>
-											</div>
-										</a>
-										<a href="#" class="search_item">
-											<div>
-												<div class="img_box">
-													<img src="img/image_02.jpg" alt="" />
-												</div>
-											</div>
-											<div>
-												<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
-												<p class="price">4000 р.</p>
-											</div>
-										</a>
-										<a href="#" class="search_item">
-											<div>
-												<div class="img_box">
-													<img src="img/image_03.jpg" alt="" />
-												</div>
-											</div>
-											<div>
-												<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
-												<p class="price">4000 р.</p>
-											</div>
-										</a>
-										<a href="#" class="search_item">
-											<div>
-												<div class="img_box">
-													<img src="img/image_04.jpg" alt="" />
-												</div>
-											</div>
-											<div>
-												<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
-												<p class="price">4000 р.</p>
-											</div>
-										</a>
-									</div>
-								</div>
+			<div class="headerTopWrapp" id="headerTopWrapp">
+				<div class="header_row_templ" id="headerTop">
+					<div class="row">
+						<div class="header_row header_row_2">
+							<div class="resp_btn_wrapp">
+								<button class="respmenubtn">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
 							</div>
-						</div>
-						<div class="right">
-							<div class="sircles_links">
-								<div>
-									<a href="#" class="sircle_link">
-										<img src="img/chart.svg" alt="" class="visible" />
-										<img src="img/chart_hover.svg" alt="" class="hover" />
-									</a>
-								</div>
-								<div>
-									<a href="#" class="sircle_link">
-										<span class="count">0</span>
-										<img src="img/heart.svg" alt="" class="visible" />
-										<img src="img/heart_red.svg" alt="" class="hover" />
-									</a>
-								</div>
-								<div>
-									<div class="basket_link_wrapp">
-										<a href="#" class="basket_link">
-											<div>
-												<div class="sircle_link">
-													<span class="count cp">3</span>
-													<img src="img/bag.svg" alt="" class="visible" />
-													<img src="img/bag_red.svg" alt="" class="hover" />
-												</div>
-											</div>
-											<div>
-												<p class="num_price"><span class="tp">8000</span> р.</p>
-											</div>
+							<div class="left">
+								<div class="inlines_3">
+									<div class="logo_wrapp">
+										<a href="#" class="logo">
+											<div><img src="img/logo.svg" alt=""></div>
+											<div><img src="img/logo_text.svg" alt=""></div>
 										</a>
-										<div class="basket_dropdown z_3">
-											<div class="basket_title">
-												<h3>Корзина (<span class="cp">3</span> товара)</h3>
+									</div>
+									<div class="catalog_wrapp">
+										<button type="button" class="catalog_btn">Все товары</button>
+										<div class="catalog_menu z_3">
+											<ul>
+												<li>
+													<a href="#">
+														<div class="icon_box">
+															<img src="img/menu_icons/icon_02.svg" alt="" />
+														</div>
+														<div class="text_col">
+															<p>Фонтаны</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="icon_box">
+															<img src="img/menu_icons/icon_01.svg" alt="" />
+														</div>
+														<div class="text_col">
+															<p>Батареи салютов</p>
+														</div>
+													</a>
+													<button type="button" class="right_arr"></button>
+													<ul class="sub_menu">
+														<li>
+															<a href="#">Малые</a>
+														</li>
+														<li>
+															<a href="#">Большие</a>
+														</li>
+														<li>
+															<a href="#">Средние</a>
+															<button type="button" class="right_arr"></button>
+															<ul class="sub_menu">
+																<li>
+																	<a href="#">Средние 1</a>
+																</li>
+																<li>
+																	<a href="#">Средние 2</a>
+																</li>
+																<li>
+																	<a href="#">Средние 3</a>
+																</li>
+																<li>
+																	<a href="#">Средние 4</a>
+																</li>
+															</ul>
+														</li>
+														<li>
+															<a href="#">Супер-салюты</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">
+														<div class="icon_box">
+															<img src="img/menu_icons/icon_03.svg" alt="" />
+														</div>
+														<div class="text_col">
+															<p>Цветной дым</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="icon_box">
+															<img src="img/menu_icons/icon_04.svg" alt="" />
+														</div>
+														<div class="text_col">
+															<p>Римские свечи</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="icon_box">
+															<img src="img/menu_icons/icon_05.svg" alt="" />
+														</div>
+														<div class="text_col">
+															<p>Петарды</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="icon_box">
+															<img src="img/menu_icons/icon_06.svg" alt="" />
+														</div>
+														<div class="text_col">
+															<p>Летающие и наземные фейерверки</p>
+														</div>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<div class="icon_box">
+															<img src="img/menu_icons/icon_07.svg" alt="" />
+														</div>
+														<div class="text_col">
+															<p>Бенгальские огни и свечи</p>
+														</div>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div data-respwidth = "900" data-resp-elem = "1" class="search_templ">
+										<div class="search_sect">
+											<div class="search_wrapp">
+												<form>
+													<div class="search_form">
+														<input type="text" class="search_input" placeholder="Поиск среди 2000+ товаров" />
+														<button type="button" class="reset_btn" id="resetBtn"></button>
+														<button type="submit" class="serch_btn" id="searchBtn"></button>
+													</div>
+												</form>
 											</div>
-											<div class="basket_items">
-												<div class="basket_item">
-													<div>
-														<div class="img_box">
-															<img src="img/legend.jpg" alt="" />
-														</div>
-													</div>
-													<div>
-														<div class="basket_row basket_row_1">
-															<div>
-																<a href="#" class="basket_item_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
-															</div>
-															<div>
-																<button type="button" class="del_btn"></button>
-															</div>
-														</div>
-														<div class="basket_row basket_row_2">
-															<div>
-																<div class="count_box">
-																	<div class="count_button_wrapp">
-																		<button type="button" class="minus_btn"></button>
-																	</div>
-																	<div class="count_num">
-																		<input type="number" readonly data-price="4000" value="1">
-																	</div>
-																	<div class="count_button_wrapp">
-																		<button type="button" class="plus_btn"></button>
-																	</div>
-																</div>
-															</div>
-															<div>
-																<p class="price_p">4000 р.</p>
-															</div>
-														</div>
-													</div>
+											<div class="search_result z_3">
+												<div class="search_result_title">
+													<h3>Найдено товаров: 4</h3>
 												</div>
-												<div class="basket_item">
-													<div>
-														<div class="img_box">
-															<img src="img/legend.jpg" alt="" />
-														</div>
-													</div>
-													<div>
-														<div class="basket_row basket_row_1">
-															<div>
-																<a href="#" class="basket_item_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
-															</div>
-															<div>
-																<button type="button" class="del_btn"></button>
+												<!-- <div class="search_items_wrapp scrollBar"> -->
+													<a href="#" class="search_item">
+														<div>
+															<div class="img_box">
+																<img src="img/tovar.jpg" alt="" />
 															</div>
 														</div>
-														<div class="basket_row basket_row_2">
-															<div>
-																<div class="count_box">
-																	<div class="count_button_wrapp">
-																		<button type="button" class="minus_btn"></button>
-																	</div>
-																	<div class="count_num">
-																		<input type="number" data-price="2800" value="1">
-																	</div>
-																	<div class="count_button_wrapp">
-																		<button type="button" class="plus_btn"></button>
-																	</div>
-																</div>
-															</div>
-															<div>
-																<p class="price_p">2800 р.</p>
+														<div>
+															<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
+															<p class="price">4000 р.</p>
+														</div>
+													</a>
+													<a href="#" class="search_item">
+														<div>
+															<div class="img_box">
+																<img src="img/tovar.jpg" alt="" />
 															</div>
 														</div>
-													</div>
-												</div>
-												<div class="basket_item">
-													<div>
-														<div class="img_box">
-															<img src="img/legend.jpg" alt="" />
+														<div>
+															<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
+															<p class="price">4000 р.</p>
 														</div>
-													</div>
-													<div>
-														<div class="basket_row basket_row_1">
-															<div>
-																<a href="#" class="basket_item_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
-															</div>
-															<div>
-																<button type="button" class="del_btn"></button>
+													</a>
+													<a href="#" class="search_item">
+														<div>
+															<div class="img_box">
+																<img src="img/tovar.jpg" alt="" />
 															</div>
 														</div>
-														<div class="basket_row basket_row_2">
-															<div>
-																<div class="count_box">
-																	<div class="count_button_wrapp">
-																		<button type="button" class="minus_btn"></button>
-																	</div>
-																	<div class="count_num">
-																		<input type="number" data-price="2000" value="1">
-																	</div>
-																	<div class="count_button_wrapp">
-																		<button type="button" class="plus_btn"></button>
-																	</div>
-																</div>
-															</div>
-															<div>
-																<p class="price_p">2000 р.</p>
+														<div>
+															<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
+															<p class="price">4000 р.</p>
+														</div>
+													</a>
+													<a href="#" class="search_item">
+														<div>
+															<div class="img_box">
+																<img src="img/tovar.jpg" alt="" />
 															</div>
 														</div>
-													</div>
-												</div>
-											</div>
-											<div class="basket_row_3">
-												<div class="blue_box">
-													<h3>Ещё 1200р. до бесплатной доставки</h3>
-													<div class="chart">
-														<div class="chart_circle"></div>
-														<p class="start">0 р.</p>
-														<p class="finish">10 000 р.</p>
-													</div>
-												</div>
-												<div class="total_sum_wrapp">
-													<div>
-														<h3>Сумма заказа</h3>
-													</div>
-													<div>
-														<p class="total_price"><span class="tp">8800</span> р.</p>
-													</div>
-												</div>
-												<button type="submit" class="orange_pill">Оформить заказ</button>
+														<div>
+															<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
+															<p class="price">4000 р.</p>
+														</div>
+													</a>
+													<!-- <a href="#" class="search_item">
+														<div>
+															<div class="img_box">
+																<img src="img/tovar.jpg" alt="" />
+															</div>
+														</div>
+														<div>
+															<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
+															<p class="price">4000 р.</p>
+														</div>
+													</a>
+													<a href="#" class="search_item">
+														<div>
+															<div class="img_box">
+																<img src="img/tovar.jpg" alt="" />
+															</div>
+														</div>
+														<div>
+															<h3>Легенды Байкала (1,2" х 25) (СП7770)</h3>
+															<p class="price">4000 р.</p>
+														</div>
+													</a> -->
+												<!-- </div> -->
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-						</div>
+							<div class="right">
+								<div class="sircles_links">
+									<div class="tab_novisible">
+										<a href="#" class="sircle_link">
+											<img src="img/chart.svg" alt="" class="visible" />
+											<img src="img/chart_hover.svg" alt="" class="hover" />
+										</a>
+									</div>
+									<div class="tab_novisible">
+										<a href="#" class="sircle_link">
+											<span class="count">0</span>
+											<img src="img/heart.svg" alt="" class="visible" />
+											<img src="img/heart_red.svg" alt="" class="hover" />
+										</a>
+									</div>
+									<div>
+										<div class="basket_link_wrapp">
+											<a href="#" class="basket_link basketLink">
+												<div>
+													<div class="sircle_link">
+														<span class="count cp">3</span>
+														<img src="img/bag.svg" alt="" class="visible" />
+														<img src="img/bag_red.svg" alt="" class="hover" />
+													</div>
+												</div>
+												<div>
+													<p class="num_price"><span class="tp">8000</span> р.</p>
+												</div>
+											</a>
+
+											<a href="#" class="basket_link_resp basketLink">
+												<span class="count cp">3</span>
+												<img src="img/bag.svg" alt="" class="visible" />
+												<img src="img/bag_red.svg" alt="" class="hover" />
+											</a>
+
+											<div class="basket_dropdown z_3">
+												<div class="basket_title">
+													<h3>Корзина (<span class="cp">3</span> товара)</h3>
+												</div>
+												<div class="basket_items_wrapp scrollBar">
+													<div class="basket_items">
+														<div class="basket_item">
+															<div>
+																<div class="img_box">
+																	<img src="img/tovar.jpg" alt="" />
+																</div>
+															</div>
+															<div>
+																<div class="basket_row basket_row_1">
+																	<div>
+																		<a href="#" class="basket_item_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
+																	</div>
+																	<div>
+																		<button type="button" class="del_btn"></button>
+																	</div>
+																</div>
+																<div class="basket_row basket_row_2">
+																	<div>
+																		<div class="count_box">
+																			<div class="count_button_wrapp">
+																				<button type="button" class="minus_btn"></button>
+																			</div>
+																			<div class="count_num">
+																				<input type="number" readonly data-price="4000" value="1">
+																			</div>
+																			<div class="count_button_wrapp">
+																				<button type="button" class="plus_btn"></button>
+																			</div>
+																		</div>
+																	</div>
+																	<div>
+																		<p class="price_p">4000 р.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="basket_item">
+															<div>
+																<div class="img_box">
+																	<img src="img/tovar.jpg" alt="" />
+																</div>
+															</div>
+															<div>
+																<div class="basket_row basket_row_1">
+																	<div>
+																		<a href="#" class="basket_item_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
+																	</div>
+																	<div>
+																		<button type="button" class="del_btn"></button>
+																	</div>
+																</div>
+																<div class="basket_row basket_row_2">
+																	<div>
+																		<div class="count_box">
+																			<div class="count_button_wrapp">
+																				<button type="button" class="minus_btn"></button>
+																			</div>
+																			<div class="count_num">
+																				<input type="number" data-price="2800" value="1">
+																			</div>
+																			<div class="count_button_wrapp">
+																				<button type="button" class="plus_btn"></button>
+																			</div>
+																		</div>
+																	</div>
+																	<div>
+																		<p class="price_p">2800 р.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="basket_item">
+															<div>
+																<div class="img_box">
+																	<img src="img/tovar.jpg" alt="" />
+																</div>
+															</div>
+															<div>
+																<div class="basket_row basket_row_1">
+																	<div>
+																		<a href="#" class="basket_item_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
+																	</div>
+																	<div>
+																		<button type="button" class="del_btn"></button>
+																	</div>
+																</div>
+																<div class="basket_row basket_row_2">
+																	<div>
+																		<div class="count_box">
+																			<div class="count_button_wrapp">
+																				<button type="button" class="minus_btn"></button>
+																			</div>
+																			<div class="count_num">
+																				<input type="number" data-price="2000" value="1">
+																			</div>
+																			<div class="count_button_wrapp">
+																				<button type="button" class="plus_btn"></button>
+																			</div>
+																		</div>
+																	</div>
+																	<div>
+																		<p class="price_p">2000 р.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="basket_item">
+															<div>
+																<div class="img_box">
+																	<img src="img/tovar.jpg" alt="" />
+																</div>
+															</div>
+															<div>
+																<div class="basket_row basket_row_1">
+																	<div>
+																		<a href="#" class="basket_item_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
+																	</div>
+																	<div>
+																		<button type="button" class="del_btn"></button>
+																	</div>
+																</div>
+																<div class="basket_row basket_row_2">
+																	<div>
+																		<div class="count_box">
+																			<div class="count_button_wrapp">
+																				<button type="button" class="minus_btn"></button>
+																			</div>
+																			<div class="count_num">
+																				<input type="number" data-price="2800" value="1">
+																			</div>
+																			<div class="count_button_wrapp">
+																				<button type="button" class="plus_btn"></button>
+																			</div>
+																		</div>
+																	</div>
+																	<div>
+																		<p class="price_p">2800 р.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="basket_item">
+															<div>
+																<div class="img_box">
+																	<img src="img/tovar.jpg" alt="" />
+																</div>
+															</div>
+															<div>
+																<div class="basket_row basket_row_1">
+																	<div>
+																		<a href="#" class="basket_item_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
+																	</div>
+																	<div>
+																		<button type="button" class="del_btn"></button>
+																	</div>
+																</div>
+																<div class="basket_row basket_row_2">
+																	<div>
+																		<div class="count_box">
+																			<div class="count_button_wrapp">
+																				<button type="button" class="minus_btn"></button>
+																			</div>
+																			<div class="count_num">
+																				<input type="number" data-price="2000" value="1">
+																			</div>
+																			<div class="count_button_wrapp">
+																				<button type="button" class="plus_btn"></button>
+																			</div>
+																		</div>
+																	</div>
+																	<div>
+																		<p class="price_p">2000 р.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="basket_row_3">
+													<div class="blue_box">
+														<h3>Ещё 1200р. до бесплатной доставки</h3>
+														<div class="chart">
+															<div class="chart_circle"></div>
+															<p class="start">0 р.</p>
+															<p class="finish">10 000 р.</p>
+														</div>
+													</div>
+													<div class="total_sum_wrapp">
+														<div>
+															<h3>Сумма заказа</h3>
+														</div>
+														<div>
+															<p class="total_price"><span class="tp">8800</span> р.</p>
+														</div>
+													</div>
+													<button type="submit" class="orange_pill">Оформить заказ</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>					
 					</div>
 				</div>
 			</div>
 		</div>								
 	</header>
+
+	<div class="row respSearch">
+		<div data-resp-append = "1"></div>
+	</div>
+
+	<div class="resp_bg"></div>
+	<div class="resp_bg_search"></div>
+	<div class="resp_bg_basket"></div>
+
+	<!-- Resp Nav -->
+
+	<div class="resp_nav" id="resp_nav">
+		<div class="resp_nav_row resp_nav_row_2">
+			<div class="dropdown_box dropdown_box_2">
+				<input type="hidden" value="" class="hide_val" />
+				<div class="dropdown_title">
+					<p class="active_val">Санкт-Петергбург</p>
+				</div>
+				<div class="dropdown_list">
+					<div class="val">Санкт-Петергбург</div>
+					<div class="val">Москва</div>
+					<div class="val">Ленинград</div>
+					<div class="val">Новоросийсск</div>
+					<div class="val">Красноярск</div>
+				</div>
+			</div>
+		</div>
+		<div class="resp_nav_row resp_nav_row_3">
+			<div>
+				<a href="tel:89152601212" class="tel_link_2">8 (915) 260-12-12</a>
+			</div>
+			<div>
+				<a href="#" class="single_link dark"><span>Заказать звонок</span></a>
+			</div>
+		</div>
+		<div class="resp_nav_row">
+			<ul class="links_2">
+				<li>
+					<a href="#" class="link_2">
+						<div>
+							<div class="icon_box">
+								<img src="img/heart.svg" alt="" class="visible">
+								<img src="img/heart_red.svg" alt="" class="hover">
+							</div>
+						</div>
+						<div>
+							<p>Избранные (0)</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="link_2">
+						<div>
+							<div class="icon_box">
+								<img src="img/chart.svg" alt="" class="visible">
+								<img src="img/chart_hover.svg" alt="" class="hover">
+							</div>
+						</div>
+						<div>
+							<p>Сравнение (0)</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="resp_nav_row">
+			<ul class="catalog_menu_resp">
+				<li>
+					<a href="#">
+						<div class="icon_box">
+							<img src="img/menu_icons/icon_02.svg" alt="" />
+						</div>
+						<div class="text_col">
+							<p>Фонтаны</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon_box">
+							<img src="img/menu_icons/icon_01.svg" alt="" />
+						</div>
+						<div class="text_col">
+							<p>Батареи салютов</p>
+						</div>
+					</a>
+					<button type="button" class="right_arr" data-submenu-link="1"></button>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon_box">
+							<img src="img/menu_icons/icon_03.svg" alt="" />
+						</div>
+						<div class="text_col">
+							<p>Цветной дым</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon_box">
+							<img src="img/menu_icons/icon_04.svg" alt="" />
+						</div>
+						<div class="text_col">
+							<p>Римские свечи</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon_box">
+							<img src="img/menu_icons/icon_05.svg" alt="" />
+						</div>
+						<div class="text_col">
+							<p>Петарды</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon_box">
+							<img src="img/menu_icons/icon_06.svg" alt="" />
+						</div>
+						<div class="text_col">
+							<p>Летающие и наземные фейерверки</p>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<div class="icon_box">
+							<img src="img/menu_icons/icon_07.svg" alt="" />
+						</div>
+						<div class="text_col">
+							<p>Бенгальские огни и свечи</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="resp_nav_row">
+			<ul class="main_nav_resp">							
+				<li><a href="#">Личный кабинет</a></li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Оплата</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="submenu_box" data-sub-menu = "1">
+		<div class="submenu_title">
+			<h3>Батареи салютов</h3>
+		</div>
+		<ul class="sub_menu_resp">
+			<li>
+				<a href="#">Малые</a>
+			</li>
+			<li>
+				<a href="#">Большие</a>
+			</li>
+			<li>
+				<a href="#">Средние</a>
+				<button type="button" class="right_arr" data-submenu-link="2"></button>
+			</li>
+			<li>
+				<a href="#">Супер-салюты</a>
+			</li>
+		</ul>
+	</div>
+
+	<div class="submenu_box" data-sub-menu = "2">
+		<div class="submenu_title">
+			<h3>Батареи салютов</h3>
+		</div>
+		<ul class="sub_menu_resp">
+			<li>
+				<a href="#">Малые 2</a>
+			</li>
+			<li>
+				<a href="#">Большие 2</a>
+			</li>
+			<li>
+				<a href="#">Средние 2</a>
+			</li>
+		</ul>
+	</div>
+
+	<!-- /Resp Nav -->
 
 	<!-- /Header -->
 
@@ -456,24 +754,21 @@
 					</div>
 					<div class="right">
 						<div class="thumbs_slider_wrapp">
+							<div class="counter_wrapp">
+								<h3>Товар дня</h3>
+								<p id="counter" data-countdowntime = "March 2, 2021"></p>
+							</div>
 							<div class="thumbs_slider">
 								<div>
 									<div class="slide">
 										<div class="good_thumb">
 											<div class="good_thumb_title">
-												<div>
-													<h3>Товар дня</h3>
-													<p>01: 06:18</p>
-												</div>
-												<div>
-													<ul class="tags_list">
-														<li><div class="tag orange">хит</div></li>
-														<li><div class="tag transparent">-25%</div></li>
-													</ul>
-												</div>
+												<ul class="tags_list">
+													<li><div class="tag orange">хит</div></li>
+													<li><div class="tag transparent">-25%</div></li>
+												</ul>
 											</div>
-											<div class="img_box" style="background-image: url(img/thumb_image.jpg)">
-												<!-- <img src="img/thumb_image.jpg" alt="" /> -->
+											<div class="img_box" style="background-image: url(img/tovar.jpg)">
 											</div>
 											<div class="thumb_descript">
 												<div class="thumb_title">
@@ -506,23 +801,168 @@
 									<div class="slide">
 										<div class="good_thumb">
 											<div class="good_thumb_title">
-												<div>
-													<h3>Товар дня</h3>
-													<p>01: 06:18</p>
-												</div>
-												<div>
-													<ul class="tags_list">
-														<li><div class="tag orange">хит</div></li>
-														<li><div class="tag transparent">-25%</div></li>
-													</ul>
-												</div>
+												<ul class="tags_list">
+													<li><div class="tag orange">хит</div></li>
+													<li><div class="tag transparent">-25%</div></li>
+												</ul>
 											</div>
-											<div class="img_box" style="background-image: url(img/thumb_image.jpg)">
-												<!-- <img src="img/thumb_image.jpg" alt="" /> -->
+											<div class="img_box" style="background-image: url(img/tovar.jpg)">
 											</div>
 											<div class="thumb_descript">
 												<div class="thumb_title">
-													<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
+													<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770) 2</a>
+													<p>25 зарядов 58 секунд</p>
+												</div>
+												<ul class="rate">
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/grey_star.svg" alt="" /></li>
+													<li><img src="img/grey_star.svg" alt="" /></li>
+												</ul>
+												<div class="two_cols_price">
+													<div>
+														<p class="price">1900 р.</p>
+													</div>
+													<div>
+														<p class="old_price">2200 р.</p>
+													</div>
+												</div>
+												<div class="thumb_footer">
+													<a href="#" class="orange_pill">+ В корзину</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide">
+										<div class="good_thumb">
+											<div class="good_thumb_title">
+												<ul class="tags_list">
+													<li><div class="tag orange">хит</div></li>
+													<li><div class="tag transparent">-25%</div></li>
+												</ul>
+											</div>
+											<div class="img_box" style="background-image: url(img/tovar.jpg)">
+											</div>
+											<div class="thumb_descript">
+												<div class="thumb_title">
+													<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770) 3</a>
+													<p>25 зарядов 58 секунд</p>
+												</div>
+												<ul class="rate">
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/grey_star.svg" alt="" /></li>
+													<li><img src="img/grey_star.svg" alt="" /></li>
+												</ul>
+												<div class="two_cols_price">
+													<div>
+														<p class="price">1900 р.</p>
+													</div>
+													<div>
+														<p class="old_price">2200 р.</p>
+													</div>
+												</div>
+												<div class="thumb_footer">
+													<a href="#" class="orange_pill">+ В корзину</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide">
+										<div class="good_thumb">
+											<div class="good_thumb_title">
+												<ul class="tags_list">
+													<li><div class="tag orange">хит</div></li>
+													<li><div class="tag transparent">-25%</div></li>
+												</ul>
+											</div>
+											<div class="img_box" style="background-image: url(img/tovar.jpg)">
+											</div>
+											<div class="thumb_descript">
+												<div class="thumb_title">
+													<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770) 4</a>
+													<p>25 зарядов 58 секунд</p>
+												</div>
+												<ul class="rate">
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/grey_star.svg" alt="" /></li>
+													<li><img src="img/grey_star.svg" alt="" /></li>
+												</ul>
+												<div class="two_cols_price">
+													<div>
+														<p class="price">1900 р.</p>
+													</div>
+													<div>
+														<p class="old_price">2200 р.</p>
+													</div>
+												</div>
+												<div class="thumb_footer">
+													<a href="#" class="orange_pill">+ В корзину</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide">
+										<div class="good_thumb">
+											<div class="good_thumb_title">
+												<ul class="tags_list">
+													<li><div class="tag orange">хит</div></li>
+													<li><div class="tag transparent">-25%</div></li>
+												</ul>
+											</div>
+											<div class="img_box" style="background-image: url(img/tovar.jpg)">
+											</div>
+											<div class="thumb_descript">
+												<div class="thumb_title">
+													<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770) 5</a>
+													<p>25 зарядов 58 секунд</p>
+												</div>
+												<ul class="rate">
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/orange_star.svg" alt="" /></li>
+													<li><img src="img/grey_star.svg" alt="" /></li>
+													<li><img src="img/grey_star.svg" alt="" /></li>
+												</ul>
+												<div class="two_cols_price">
+													<div>
+														<p class="price">1900 р.</p>
+													</div>
+													<div>
+														<p class="old_price">2200 р.</p>
+													</div>
+												</div>
+												<div class="thumb_footer">
+													<a href="#" class="orange_pill">+ В корзину</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="slide">
+										<div class="good_thumb">
+											<div class="good_thumb_title">
+												<ul class="tags_list">
+													<li><div class="tag orange">хит</div></li>
+													<li><div class="tag transparent">-25%</div></li>
+												</ul>
+											</div>
+											<div class="img_box" style="background-image: url(img/tovar.jpg)">
+											</div>
+											<div class="thumb_descript">
+												<div class="thumb_title">
+													<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770) 6</a>
 													<p>25 зарядов 58 секунд</p>
 												</div>
 												<ul class="rate">
@@ -639,7 +1079,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -709,7 +1149,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -779,7 +1219,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -849,7 +1289,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -919,7 +1359,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -989,7 +1429,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1059,7 +1499,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1192,26 +1632,43 @@
 				</div>
 				<div class="two_cols_2">
 					<div class="col_1">
-						<ul class="tags_list_2">
-							<li><a href="#" class="tag_2">Со скидкой</a></li>
-							<li><a href="#" class="tag_2">Для праздника</a></li>
-							<li><a href="#" class="tag_2">На свадьбу</a></li>
-							<li><a href="#" class="tag_2">Супер-скидка</a></li>
-							<li><a href="#" class="tag_2">Акции</a></li>
-							<li><a href="#" class="tag_2">Петарды</a></li>
-							<li><a href="#" class="tag_2">Батареи салютов</a></li>
-							<li><a href="#" class="tag_2">Летающие</a></li>
-							<li><a href="#" class="tag_2">Петарды</a></li>
-							<li><a href="#" class="tag_2">Для праздника</a></li>
-							<li><a href="#" class="tag_2">Летающие</a></li>
-							<li><a href="#" class="tag_2">Супер-скидка</a></li>
-							<li><a href="#" class="tag_2">Со скидкой</a></li>
-							<li><a href="#" class="tag_2">Батареи салютов</a></li>
-							<li><a href="#" class="tag_2">На свадьбу</a></li>
-						</ul>
+						<div class="tags_list__wrapp" def-height = "88" data-tags = "tags_1">
+							<ul class="tags_list_2">
+								<li><a href="#" class="tag_2">Со скидкой</a></li>
+								<li><a href="#" class="tag_2">Для праздника</a></li>
+								<li><a href="#" class="tag_2">На свадьбу</a></li>
+								<li><a href="#" class="tag_2">Супер-скидка</a></li>
+								<li><a href="#" class="tag_2">Акции</a></li>
+								<li><a href="#" class="tag_2">Петарды</a></li>
+								<li><a href="#" class="tag_2">Батареи салютов</a></li>
+								<li><a href="#" class="tag_2">Летающие</a></li>
+								<li><a href="#" class="tag_2">Петарды</a></li>
+								<li><a href="#" class="tag_2">Для праздника</a></li>
+								<li><a href="#" class="tag_2">Летающие</a></li>
+								<li><a href="#" class="tag_2">Супер-скидка</a></li>
+								<li><a href="#" class="tag_2">Со скидкой</a></li>
+								<li><a href="#" class="tag_2">Батареи салютов</a></li>
+								<li><a href="#" class="tag_2">На свадьбу</a></li>
+								<li><a href="#" class="tag_2">Со скидкой</a></li>
+								<li><a href="#" class="tag_2">Для праздника</a></li>
+								<li><a href="#" class="tag_2">На свадьбу</a></li>
+								<li><a href="#" class="tag_2">Супер-скидка</a></li>
+								<li><a href="#" class="tag_2">Акции</a></li>
+								<li><a href="#" class="tag_2">Петарды</a></li>
+								<li><a href="#" class="tag_2">Батареи салютов</a></li>
+								<li><a href="#" class="tag_2">Летающие</a></li>
+								<li><a href="#" class="tag_2">Петарды</a></li>
+								<li><a href="#" class="tag_2">Для праздника</a></li>
+								<li><a href="#" class="tag_2">Летающие</a></li>
+								<li><a href="#" class="tag_2">Супер-скидка</a></li>
+								<li><a href="#" class="tag_2">Со скидкой</a></li>
+								<li><a href="#" class="tag_2">Батареи салютов</a></li>
+								<li><a href="#" class="tag_2">На свадьбу</a></li>
+							</ul>
+						</div>
 					</div>
 					<div class="col_2">
-						<a href="#" class="single_link_2 single_link_2_2"><span>Показать ещё</span></a>
+						<a href="#" class="single_link_2 single_link_2_2 tagsBtn" data-tagsbtn = "tags_1"><span class="show">Показать ещё</span><span class="hide">Скрыть</span></a>
 					</div>
 				</div>
 			</div>
@@ -1251,7 +1708,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1321,7 +1778,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1391,7 +1848,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1461,7 +1918,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1531,7 +1988,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1601,7 +2058,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1671,7 +2128,7 @@
 												<li><div class="tag transparent">-25%</div></li>
 											</ul>
 										</div>
-										<div class="img_box" style="background-image: url(img/thumb_image.jpg)"></div>
+										<div class="img_box" style="background-image: url(img/tovar.jpg)"></div>
 										<div class="thumb_descript">
 											<div class="thumb_title">
 												<a href="#" class="good_title">Легенды Байкала (1,2" х 25) (СП7770)</a>
@@ -1821,7 +2278,7 @@
 										<a href="#" class="testimonial_good">
 											<div>
 												<div class="icon_box">
-													<img src="img/thumb_image.jpg" alt="" />
+													<img src="img/tovar.jpg" alt="" />
 												</div>
 											</div>
 											<div>
@@ -1858,7 +2315,7 @@
 										<a href="#" class="testimonial_good">
 											<div>
 												<div class="icon_box">
-													<img src="img/thumb_image.jpg" alt="" />
+													<img src="img/tovar.jpg" alt="" />
 												</div>
 											</div>
 											<div>
@@ -1895,7 +2352,7 @@
 										<a href="#" class="testimonial_good">
 											<div>
 												<div class="icon_box">
-													<img src="img/thumb_image.jpg" alt="" />
+													<img src="img/tovar.jpg" alt="" />
 												</div>
 											</div>
 											<div>
@@ -1932,7 +2389,7 @@
 										<a href="#" class="testimonial_good">
 											<div>
 												<div class="icon_box">
-													<img src="img/thumb_image.jpg" alt="" />
+													<img src="img/tovar.jpg" alt="" />
 												</div>
 											</div>
 											<div>
@@ -2090,7 +2547,7 @@
 			<div class="row">
 				<div class="two_cols_3">
 					<div class="left">
-						<h2>Магазин пиротехники в Москве</h2>
+						<h1>Магазин пиротехники в Москве</h1>
 						<div class="thumbnails_3">
 							<div class="thumb_3">
 								<div class="icon_box_wrapp">
@@ -2370,11 +2827,11 @@
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css">
-	<!-- <link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css"> -->
+	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/jquery.fancybox.css">
 	<script src="vendors/js/jquery.js"></script>
 	<script src="slick/slick.js"></script>
-	<!-- <script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script> -->
+	<script type="text/javascript" src="vendors/js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<script src="vendors/js/jquery.fancybox.js"></script>
 	<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU"></script>
 	<script src="js/scripts.js"></script>
