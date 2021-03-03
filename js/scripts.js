@@ -364,7 +364,8 @@ $(document).ready(function() {
 
   // -------------
 
-  $(".count_box button").click(function(e) {
+  // $(".count_box button").click(function(e) {
+  $(document).on("click", ".count_box button", function(e) {
     e.preventDefault();
     parentBlock = $(this).closest(".count_box");
     countInput = parentBlock.find(".count_num input");
@@ -383,7 +384,8 @@ $(document).ready(function() {
 
   // ---------------
 
-  $(".basketLink").on("click", function(e) {
+  // $(".basketLink").on("click", function(e) {
+  $(document).on("click", ".basketLink", function(e) {
     e.preventDefault();
     parent = $(this).closest(".basket_link_wrapp");
     dropdown = parent.find(".basket_dropdown");
@@ -417,13 +419,15 @@ $(document).ready(function() {
     }
   });
 
-  $(".resp_bg_basket").on("click", function(e) {
+  // $(".resp_bg_basket").on("click", function(e) {
+  $(document).on("click", ".resp_bg_basket", function(e) {
     e.preventDefault();
      $(this).fadeOut(300);
      $(".basketLink").removeClass("active");
   });
 
-  $(".basket_item .del_btn").on("click", function(e) {
+  // $(".basket_item .del_btn").on("click", function(e) {
+  $(document).on("click", ".basket_item .del_btn", function(e) {
     e.preventDefault();
     parent = $(this).closest(".basket_item");
     parent.slideUp(400);

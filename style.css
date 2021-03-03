@@ -2835,6 +2835,8 @@ textarea:focus {
 .links_list {
     display: flex;
     display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     margin: 0 -15px;
 }
 
@@ -4709,4 +4711,20 @@ footer {
 
 .resp_footer {
     display: none;
+}
+
+.footer_nav_resp {
+    display: none;
+}
+
+.scrollbar_600 .mCSB_scrollTools.mCSB_3_scrollbar.mCS-light.mCSB_scrollTools_horizontal {
+    opacity: 0 !important;
+}
+
+.scrollbar_600 .mCSB_horizontal.mCSB_inside > .mCSB_container {
+    margin-bottom: 5px;
+}
+
+.scrollbar_600 .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+    opacity: 0 !important;
 }
