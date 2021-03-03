@@ -78,7 +78,7 @@
 							</div>
 							<div class="left">
 								<div class="inlines_3">
-									<div class="logo_wrapp">
+									<div class="logo_wrapp logo_header">
 										<a href="#" class="logo">
 											<div><img src="img/logo.svg" alt=""></div>
 											<div><img src="img/logo_text.svg" alt=""></div>
@@ -755,8 +755,12 @@
 					<div class="right">
 						<div class="thumbs_slider_wrapp">
 							<div class="counter_wrapp">
-								<h3>Товар дня</h3>
-								<p id="counter" data-countdowntime = "March 2, 2021"></p>
+								<div>
+									<h3>Товар дня</h3>
+								</div>
+								<div>
+									<p id="counter" data-countdowntime = "March 5, 2021"></p>
+								</div>
 							</div>
 							<div class="thumbs_slider">
 								<div>
@@ -993,7 +997,7 @@
 					</div>
 				</div>
 				<div class="categpries_thumbs">
-					<div>
+					<div class="slide">
 						<a href="#" class="categprie_thumb">
 							<div class="icon_box">
 								<img src="img/catalog_icons/icon_01.svg" alt="" />
@@ -1001,7 +1005,7 @@
 							<p>Каталог феерверков</p>
 						</a>
 					</div>
-					<div>
+					<div class="slide">
 						<a href="#" class="categprie_thumb">
 							<div class="icon_box">
 								<img src="img/catalog_icons/icon_02.svg" alt="" />
@@ -1009,7 +1013,7 @@
 							<p>Феерверк шоу</p>
 						</a>
 					</div>
-					<div>
+					<div class="slide">
 						<a href="#" class="categprie_thumb">
 							<div class="icon_box">
 								<img src="img/catalog_icons/icon_03.svg" alt="" />
@@ -1017,7 +1021,7 @@
 							<p>Пиротехника оптом</p>
 						</a>
 					</div>
-					<div>
+					<div class="slide">
 						<a href="#" class="categprie_thumb">
 							<div class="icon_box">
 								<img src="img/catalog_icons/icon_04.svg" alt="" />
@@ -1025,7 +1029,7 @@
 							<p>Пиротехника PROFF</p>
 						</a>
 					</div>
-					<div>
+					<div class="slide">
 						<a href="#" class="categprie_thumb">
 							<div class="icon_box">
 								<img src="img/catalog_icons/icon_05.svg" alt="" />
@@ -1033,7 +1037,7 @@
 							<p>Акции и скидки</p>
 						</a>
 					</div>
-					<div>
+					<div class="slide">
 						<a href="#" class="categprie_thumb">
 							<div class="icon_box">
 								<img src="img/catalog_icons/icon_06.svg" alt="" />
@@ -1059,13 +1063,15 @@
 						<a href="#" class="single_link_2"><span>Смотреть все</span></a>
 					</div>
 				</div>
-				<ul class="links_list">
-					<li><a href="#"><span>Хиты продаж</span></a></li>
-					<li><a href="#"><span>Рекомендуем</span></a></li>
-					<li><a href="#"><span>Новинки</span></a></li>
-					<li><a href="#"><span>Для свадьбы</span></a></li>
-					<li><a href="#"><span>Со скидкой</span></a></li>
-				</ul>
+				<div class="scrollbar_600">
+					<ul class="links_list">
+						<li><a href="#"><span>Хиты продаж</span></a></li>
+						<li><a href="#"><span>Рекомендуем</span></a></li>
+						<li><a href="#"><span>Новинки</span></a></li>
+						<li><a href="#"><span>Для свадьбы</span></a></li>
+						<li><a href="#"><span>Со скидкой</span></a></li>
+					</ul>
+				</div>
 				<div class="goods_cards_slider_wrapp">
 					<div class="goods_cards_slider">
 						<div>
@@ -1573,66 +1579,80 @@
 					<h2>Категории товаров</h2>
 				</div>
 				<div class="thumbnails_1">
-					<a href="#" class="thumb_1">
-						<div class="icon_box">
-							<img src="img/good_01.png" alt="" />
-						</div>
-						<div class="thumb_descript">
-							<p>Петарды</p>
-						</div>
-					</a>
-					<a href="#" class="thumb_1">
-						<div class="icon_box">
-							<img src="img/good_02.png" alt="" />
-						</div>
-						<div class="thumb_descript">
-							<p>Цветной дым</p>
-						</div>
-					</a>
-					<a href="#" class="thumb_1">
-						<div class="icon_box">
-							<img src="img/good_03.png" alt="" />
-						</div>
-						<div class="thumb_descript">
-							<p>Фонтаны</p>
-						</div>
-					</a>
-					<a href="#" class="thumb_1">
-						<div class="icon_box">
-							<img src="img/good_04.png" alt="" />
-						</div>
-						<div class="thumb_descript">
-							<p>Батареи салютов</p>
-						</div>
-					</a>
-					<a href="#" class="thumb_1">
-						<div class="icon_box">
-							<img src="img/good_05.png" alt="" />
-						</div>
-						<div class="thumb_descript">
-							<p>Летающие и наземные фейерверки</p>
-						</div>
-					</a>
-					<a href="#" class="thumb_1">
-						<div class="icon_box">
-							<img src="img/good_06.png" alt="" />
-						</div>
-						<div class="thumb_descript">
-							<p>Римские свечи</p>
-						</div>
-					</a>
-					<a href="#" class="thumb_1">
-						<div class="icon_box">
-							<img src="img/good_07.png" alt="" />
-						</div>
-						<div class="thumb_descript">
-							<p>Римские свечи</p>
-						</div>
-					</a>
+					<div class="slide">
+						<a href="#" class="thumb_1">
+							<div class="icon_box">
+								<img src="img/good_01.png" alt="" />
+							</div>
+							<div class="thumb_descript">
+								<p>Петарды</p>
+							</div>
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="thumb_1">
+							<div class="icon_box">
+								<img src="img/good_02.png" alt="" />
+							</div>
+							<div class="thumb_descript">
+								<p>Цветной дым</p>
+							</div>
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="thumb_1">
+							<div class="icon_box">
+								<img src="img/good_03.png" alt="" />
+							</div>
+							<div class="thumb_descript">
+								<p>Фонтаны</p>
+							</div>
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="thumb_1">
+							<div class="icon_box">
+								<img src="img/good_04.png" alt="" />
+							</div>
+							<div class="thumb_descript">
+								<p>Батареи салютов</p>
+							</div>
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="thumb_1">
+							<div class="icon_box">
+								<img src="img/good_05.png" alt="" />
+							</div>
+							<div class="thumb_descript">
+								<p>Летающие и наземные фейерверки</p>
+							</div>
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="thumb_1">
+							<div class="icon_box">
+								<img src="img/good_06.png" alt="" />
+							</div>
+							<div class="thumb_descript">
+								<p>Римские свечи</p>
+							</div>
+						</a>
+					</div>
+					<div class="slide">
+						<a href="#" class="thumb_1">
+							<div class="icon_box">
+								<img src="img/good_07.png" alt="" />
+							</div>
+							<div class="thumb_descript">
+								<p>Римские свечи</p>
+							</div>
+						</a>
+					</div>
 				</div>
 				<div class="two_cols_2">
 					<div class="col_1">
-						<div class="tags_list__wrapp" def-height = "88" data-tags = "tags_1">
+						<div class="tags_list__wrapp scrollbar_900" def-height = "88" data-tags = "tags_1">
 							<ul class="tags_list_2">
 								<li><a href="#" class="tag_2">Со скидкой</a></li>
 								<li><a href="#" class="tag_2">Для праздника</a></li>
@@ -2545,9 +2565,16 @@
 
 		<section class="sect_8_mp">
 			<div class="row">
-				<div class="two_cols_3">
+				<div class="two_cols_title">
 					<div class="left">
 						<h1>Магазин пиротехники в Москве</h1>
+					</div>
+					<div class="right">
+						<p>Компания «Пиро-Каскад» специализируется на импорте профессиональных и бытовых пиротехнических изделий, их оптовой и мелкооптовой продаже на территории РФ, организации и проведении фейерверочных шоу-программ.</p>
+					</div>
+				</div>
+				<div class="two_cols_3">
+					<div class="left">
 						<div class="thumbnails_3">
 							<div class="thumb_3">
 								<div class="icon_box_wrapp">
@@ -2589,7 +2616,6 @@
 					</div>
 					<div class="right">
 						<div class="video_sect">
-							<p>Компания «Пиро-Каскад» специализируется на импорте профессиональных и бытовых пиротехнических изделий, их оптовой и мелкооптовой продаже на территории РФ, организации и проведении фейерверочных шоу-программ.</p>
 							<a href="https://youtu.be/QbD_z8czMhY" class="video_box" style="background-image: url(img/video_bg.jpg)" data-fancybox = "video">
 								<div class="play"></div>
 							</a>
@@ -2790,7 +2816,7 @@
 					</div>
 					<div class="col">
 						<div class="form_wrapp">
-							<h3>Подпишитесь на новости магазина</h3>
+							<h3>Подпишитесь на новости<br /> магазина</h3>
 							<div class="form_box">
 								<form>
 									<div class="input_wrapp">
@@ -2807,15 +2833,52 @@
 						<div class="two_cols_4">
 							<div class="col_1">
 								<a class="tel_link_2" href="tel:89152601212">8 (915) 260-12-12</a>
-								<ul class="adres_list">
-									<li>г. Москва, Рязанский пр-т 18</li>
-									<li><a href="mailto:info@pirokaskad.ru">info@pirokaskad.ru</a></li>
-								</ul>
 							</div>
 							<div class="col_2">
 								<a href="#" class="single_link_2 single_link_2_2"><span>Заказать звонок</span></a>
 							</div>
 						</div>
+						<ul class="adres_list">
+							<li>г. Москва, Рязанский пр-т 18</li>
+							<li><a href="mailto:info@pirokaskad.ru">info@pirokaskad.ru</a></li>
+						</ul>
+						<ul class="soc_list resp_soc_list">
+							<li>
+								<a href="#">
+									<img src="img/tel_grey.svg" class="link" alt="" />
+									<img src="img/tel_red.svg" class="hover" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/fb_grey.svg" class="link" alt="" />
+									<img src="img/fb_red.svg" class="hover" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/vk_grey.svg" class="link" alt="" />
+									<img src="img/vk_red.svg" class="hover" alt="" />
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<img src="img/inst_grey.svg" class="link" alt="" />
+									<img src="img/inst_red.svg" class="hover" alt="" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="resp_footer">
+					<div class="col">
+						<p class="corp_p">© 2020 Фейерверки, салюты и пиротехника в Москве - магазин Пиро-Каскад</p>
+					</div>
+					<div class="col">
+						<a href="#" class="link_3">Политика конфиденциальности </a></li>
+					</div>
+					<div class="col">
+						<a href="#" class="link_3">Оферта</a>
 					</div>
 				</div>
 			</div>

@@ -98,6 +98,84 @@ function getTagsBtnParams() {
   });
 }
 
+function getRespSlider() {
+  if($(".categpries_thumbs")) {
+    if(bodyWidth <= 900) {
+      $(".categpries_thumbs").not(".slick-initialized").slick({
+          dots: true,
+          arrows: true,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          variableWidth: true,
+          responsive: [
+              {
+                breakpoint: 900,
+                settings: {
+                  arrows: false,
+                  dots: false
+                }
+              }
+            ]
+      });
+    } else if($(".categpries_thumbs").hasClass("slick-initialized")) {
+      $(".categpries_thumbs").slick('unslick');
+    }
+  }
+
+
+  if($(".thumbnails_1")) {
+    if(bodyWidth <= 900) {
+      $(".thumbnails_1").not(".slick-initialized").slick({
+          dots: true,
+          arrows: true,
+          // autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1200,
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          variableWidth: true,
+          responsive: [
+              {
+                breakpoint: 900,
+                settings: {
+                  arrows: false,
+                  dots: false
+                }
+              }
+            ]
+      });
+    } else if($(".thumbnails_1").hasClass("slick-initialized")) {
+      $(".thumbnails_1").slick('unslick');
+    }
+  }
+
+  if($('.scrollbar_900').length > 0) {
+    if(bodyWidth <= 900) {
+      $('.scrollbar_900').mCustomScrollbar({
+        axis:"x",
+        alwaysShowScrollbar: 0
+      });
+    } else {
+      $('.scrollbar_900').mCustomScrollbar("destroy");
+    }
+  }
+
+  if($('.scrollbar_600').length > 0) {
+    if(bodyWidth <= 600) {
+      $('.scrollbar_600').mCustomScrollbar({
+        axis:"x",
+        alwaysShowScrollbar: 0
+      });
+    } else {
+      $('.scrollbar_600').mCustomScrollbar("destroy");
+    }
+  }
+
+}
+
 var w = window,
 d = document,
 e = d.documentElement,
@@ -117,6 +195,7 @@ $(window).resize(function() {
   getRespPositionElems();
   getRespNavParams();
   getTagsBtnParams();
+  getRespSlider();
   if(!$(".basketLink").hasClass("active")) {
     $(".resp_bg_basket").css({
       "display" : "none"
@@ -149,6 +228,7 @@ $(document).ready(function() {
   getRespNavParams();
   getRespNavScrollDimension();
   getTagsBtnParams();
+  getRespSlider();
 
   $(".dropdown_title").on("click", function(e) {
     e.preventDefault();
@@ -396,7 +476,16 @@ $(document).ready(function() {
             breakpoint: 900,
             settings: {
               variableWidth: true,
-              // slidesToShow: 1,
+              slidesToShow: 3,
+              fade: false
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              variableWidth: true,
+              slidesToShow: 3,
+              fade: false
             }
           }
         ]
@@ -414,22 +503,16 @@ if( $(".goods_cards_slider").length > 0 ) {
           slidesToScroll: 1,
           // variableWidth: true,
           // fade: true,
-          // responsive: [
-          //     {
-          //       breakpoint: 900,
-          //       settings: {
-          //         slidesToShow: 2,
-          //         slidesToScroll: 2
-          //       }
-          //     },
-          //     {
-          //       breakpoint: 540,
-          //       settings: {
-          //         slidesToShow: 1,
-          //         slidesToScroll: 1
-          //       }
-          //     }
-          //   ]
+          responsive: [
+              {
+                breakpoint: 900,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  variableWidth: true
+                }
+              }
+            ]
       });
   }
 
@@ -444,22 +527,15 @@ if( $(".goods_cards_slider").length > 0 ) {
         slidesToScroll: 1,
         // variableWidth: true,
         // fade: true,
-        // responsive: [
-        //     {
-        //       breakpoint: 900,
-        //       settings: {
-        //         slidesToShow: 2,
-        //         slidesToScroll: 2
-        //       }
-        //     },
-        //     {
-        //       breakpoint: 540,
-        //       settings: {
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1
-        //       }
-        //     }
-        //   ]
+        responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 1,
+                arrows: false
+              }
+            }
+          ]
     });
   }
 
@@ -474,22 +550,24 @@ if( $(".goods_cards_slider").length > 0 ) {
         slidesToScroll: 1,
         // variableWidth: true,
         // fade: true,
-        // responsive: [
-        //     {
-        //       breakpoint: 900,
-        //       settings: {
-        //         slidesToShow: 2,
-        //         slidesToScroll: 2
-        //       }
-        //     },
-        //     {
-        //       breakpoint: 540,
-        //       settings: {
-        //         slidesToShow: 1,
-        //         slidesToScroll: 1
-        //       }
-        //     }
-        //   ]
+        responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: false
+              }
+            },
+            {
+              breakpoint: 540,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false
+              }
+            }
+          ]
     });
   }
 
@@ -502,24 +580,24 @@ if( $(".goods_cards_slider").length > 0 ) {
           speed: 1200,
           slidesToShow: 4,
           slidesToScroll: 1,
-          // variableWidth: true,
+          variableWidth: true,
           // fade: true,
-          // responsive: [
-          //     {
-          //       breakpoint: 900,
-          //       settings: {
-          //         slidesToShow: 2,
-          //         slidesToScroll: 2
-          //       }
-          //     },
-          //     {
-          //       breakpoint: 540,
-          //       settings: {
-          //         slidesToShow: 1,
-          //         slidesToScroll: 1
-          //       }
-          //     }
-          //   ]
+          responsive: [
+              {
+                breakpoint: 900,
+                settings: {
+                  dots: false,
+                  arrows: false
+                }
+              },
+              // {
+              //   breakpoint: 540,
+              //   settings: {
+              //     slidesToShow: 1,
+              //     slidesToScroll: 1
+              //   }
+              // }
+            ]
       });
     }
 
@@ -532,7 +610,15 @@ if( $(".goods_cards_slider").length > 0 ) {
           speed: 1200,
           slidesToShow: 1,
           slidesToScroll: 1,
-          fade: true
+          fade: true,
+          responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                arrows: false
+              }
+            }
+          ]
       });
     }
 
@@ -645,8 +731,8 @@ if( $(".goods_cards_slider").length > 0 ) {
 
   // ------------
 
-  var countDownTime = $("№counter").attr("data-countdowntime");
-  var countDownDate = new Date("March 2, 2021").getTime();
+  var countDownTime = $("#counter").attr("data-countdowntime");
+  var countDownDate = new Date(countDownTime).getTime();
 
   var x = setInterval(function() {
 
