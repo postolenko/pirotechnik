@@ -1,3 +1,11 @@
+function getAnimation() {
+  $(".animate").each(function() {
+    if( $(this).offset().top <= $(document).scrollTop() + $(window).height() ) {
+      $(this).addClass("active");
+    }
+  });
+}
+
 function getTotalSum() {
   tp = 0;
   num = 0;
@@ -187,7 +195,7 @@ var scrollPos = 0;
 
 
 $(window).load(function() {
-
+  getAnimation();
 });
 
 $(window).resize(function() {
@@ -196,6 +204,7 @@ $(window).resize(function() {
   getRespNavParams();
   getTagsBtnParams();
   getRespSlider();
+  getAnimation();
   if(!$(".basketLink").hasClass("active")) {
     $(".resp_bg_basket").css({
       "display" : "none"
@@ -210,6 +219,7 @@ $(window).resize(function() {
 
 $(document).scroll(function() {
   getRespNavParams();
+  getAnimation();
 });
 
 
@@ -218,7 +228,7 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function() {
-
+  
   if($('.scrollBar').length > 0) {
     $('.scrollBar').mCustomScrollbar({
     });
