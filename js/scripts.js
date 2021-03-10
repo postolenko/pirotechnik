@@ -11,7 +11,6 @@ function getTotalSum() {
   num = 0;
   $("[data-price]").each(function() {
     count = parseInt( $(this).val() );
-    console.log(count);
     priceVal = parseInt( $(this).attr("data-price") );
     num = count * priceVal;
     tp += num;
@@ -34,11 +33,7 @@ function getRespPositionElems() {
 }
 
 function getRespNavParams() {
-  // if(bodyWidth > 900) {
-    scrollTopCoord = $("#headerTopWrapp").offset().top + $("#headerTopWrapp").height();
-  // } else {
-  //   scrollTopCoord= 5;
-  // }
+  scrollTopCoord = $("#headerTopWrapp").offset().top + $("#headerTopWrapp").height();
   if($(document).scrollTop() > scrollTopCoord) {
     $("#headerTop").addClass("scroll");
   } else {
@@ -107,56 +102,64 @@ function getTagsBtnParams() {
 }
 
 function getRespSlider() {
-  if($(".categpries_thumbs")) {
-    if(bodyWidth <= 900) {
-      $(".categpries_thumbs").not(".slick-initialized").slick({
-          dots: true,
-          arrows: true,
-          // autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          variableWidth: true,
-          responsive: [
-              {
-                breakpoint: 900,
-                settings: {
-                  arrows: false,
-                  dots: false
-                }
-              }
-            ]
+    // if($(".categpries_thumbs")) {
+    // if(bodyWidth <= 900) {
+    //   $(".categpries_thumbs").not(".slick-initialized").slick({
+    //       dots: true,
+    //       arrows: true,
+    //       // autoplay: true,
+    //       autoplaySpeed: 4000,
+    //       speed: 1200,
+    //       slidesToShow: 4,
+    //       slidesToScroll: 1,
+    //       variableWidth: true,
+    //       responsive: [
+    //           {
+    //             breakpoint: 900,
+    //             settings: {
+    //               arrows: false,
+    //               dots: false
+    //             }
+    //           }
+    //         ]
+    //   });
+    // } else if($(".categpries_thumbs").hasClass("slick-initialized")) {
+    //   $(".categpries_thumbs").slick('unslick');
+    // }
+
+  if($(".categpries_thumbs").length > 0) {
+    demo = $(".categpries_thumbs");
+    if(bodyWidth >= 900) {
+       demo.owlCarousel('destroy');
+       demo.removeClass('owl-carousel');
+    } else {
+      demo.addClass('owl-carousel');
+      demo.owlCarousel({
+          loop: true,
+          margin: 10,
+          dots: false,
+          nav: true,
+          responsiveClass:true,
+          autoWidth: true,
+          items: 5,
+          startPosition:1
       });
-    } else if($(".categpries_thumbs").hasClass("slick-initialized")) {
-      $(".categpries_thumbs").slick('unslick');
     }
   }
 
 
   if($(".thumbnails_1")) {
     if(bodyWidth <= 900) {
-      $(".thumbnails_1").not(".slick-initialized").slick({
-          dots: true,
-          arrows: true,
-          // autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          variableWidth: true,
-          responsive: [
-              {
-                breakpoint: 900,
-                settings: {
-                  arrows: false,
-                  dots: false
-                }
-              }
-            ]
+      $(".thumbnails_1").addClass('owl-carousel');
+      $(".thumbnails_1").owlCarousel({
+        loop: true,
+        dots: false,
+        nav: false,
+        autoWidth: true
       });
-    } else if($(".thumbnails_1").hasClass("slick-initialized")) {
-      $(".thumbnails_1").slick('unslick');
+    } else {
+      $(".thumbnails_1").owlCarousel('destroy');
+      $(".thumbnails_1").removeClass('owl-carousel');
     }
   }
 
@@ -454,186 +457,329 @@ $(document).ready(function() {
   });
 
   if( $(".promo_slider").length > 0 ) {
-      $(".promo_slider").not(".slick-initialized").slick({
+      // $(".promo_slider").not(".slick-initialized").slick({
+      //     dots: true,
+      //     arrows: true,
+      //     // autoplay: true,
+      //     autoplaySpeed: 4000,
+      //     speed: 1200,
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     fade: true,
+      //     responsive: [
+      //         {
+      //           breakpoint: 900,
+      //           settings: {
+      //             arrows: false
+      //           }
+      //         }
+      //       ]
+      // });
+
+      $(".promo_slider").owlCarousel({
+          loop: true,
+          // margin: 10,
           dots: true,
-          arrows: true,
-          // autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          fade: true,
-          responsive: [
-              {
-                breakpoint: 900,
-                settings: {
-                  arrows: false
-                }
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 7000,
+          responsiveClass: true,
+          animateOut: 'fadeOut',
+          // autoWidth: true,
+          // startPosition:1
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true
+              },
+              9999:{
+                  items:1,
+                  nav:true
               }
-            ]
+          }
       });
   }
 
   if( $(".thumbs_slider").length > 0 ) {
-    $(".thumbs_slider").not(".slick-initialized").slick({
-        dots: true,
-        arrows: false,
-        // autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 1200,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        appendDots: $(".thumbs_slider_controls"),
-        fade: true,
-        responsive: [
-          {
-            breakpoint: 900,
-            settings: {
-              variableWidth: true,
-              slidesToShow: 3,
-              fade: false
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              variableWidth: true,
-              slidesToShow: 3,
-              fade: false
-            }
-          }
-        ]
-    });
+    // $(".thumbs_slider").not(".slick-initialized").slick({
+    //     dots: true,
+    //     arrows: false,
+    //     // autoplay: true,
+    //     autoplaySpeed: 4000,
+    //     speed: 1200,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     appendDots: $(".thumbs_slider_controls"),
+    //     fade: true,
+    //     responsive: [
+    //       {
+    //         breakpoint: 900,
+    //         settings: {
+    //           variableWidth: true,
+    //           slidesToShow: 3,
+    //           fade: false
+    //         }
+    //       },
+    //       {
+    //         breakpoint: 600,
+    //         settings: {
+    //           variableWidth: true,
+    //           slidesToShow: 3,
+    //           fade: false
+    //         }
+    //       }
+    //     ]
+    // });
   }
   
 if( $(".goods_cards_slider").length > 0 ) {
-      $(".goods_cards_slider").not(".slick-initialized").slick({
-          dots: false,
-          arrows: false,
-          // autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          // variableWidth: true,
-          // fade: true,
-          responsive: [
-              {
-                breakpoint: 900,
-                settings: {
-                  slidesToShow: 3,
-                  slidesToScroll: 1,
-                  variableWidth: true
-                }
-              }
-            ]
+      $(".goods_cards_slider").owlCarousel({
+        loop: true,
+        dots: false,
+        nav: true,
+        autoWidth: true
+      });
+
+      $(document).on('mouseenter', '.good_thumb_2', function() {
+        $( this ).find(".dropdown_footer").stop().slideDown(200);
+      });
+      $(document).on('mouseleave', '.good_thumb_2', function() {
+        $( this ).find(".dropdown_footer").stop().slideUp(200);
+      });
+
+      $(document).on('click', '.good_thumb_2 .pill_1', function(e) {
+        e.preventDefault();
+        parent = $(this).closest(".good_thumb_2");
+        dropdownFooter = parent.find(".dropdown_footer");
+        parent.find(".dropdown_footer").css({
+          "height" : "auto"
+        });
+        parent.addClass("active");
       });
   }
 
   if( $(".slider_2").length > 0 ) {
-    $(".slider_2").not(".slick-initialized").slick({
-        dots: true,
-        arrows: true,
-        // autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 1200,
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        // variableWidth: true,
-        // fade: true,
-        responsive: [
-            {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 1,
-                arrows: false
+    // $(".slider_2").not(".slick-initialized").slick({
+    //     dots: true,
+    //     arrows: true,
+    //     // autoplay: true,
+    //     autoplaySpeed: 4000,
+    //     speed: 1200,
+    //     slidesToShow: 2,
+    //     slidesToScroll: 1,
+    //     // variableWidth: true,
+    //     // fade: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 900,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             arrows: false
+    //           }
+    //         }
+    //       ]
+    // });
+
+        $(".slider_2").owlCarousel({
+          loop: true,
+          margin: 30,
+          dots: true,
+          nav: true,
+          // autoplay: true,
+          // autoplayTimeout: 7000,
+          responsiveClass: true,
+          // autoWidth: true,
+          // startPosition:1
+          responsive:{
+              0:{
+                  items:1,
+                  dots: true,
+                  nav: true
+              },
+              900:{
+                  items:2,
+                  dots: true,
+                  nav: true
+              },
+              9999:{
+                  items:2,
+                  dots: true,
+                  nav: true
               }
-            }
-          ]
-    });
+          }
+        });
   }
 
   if( $(".testimonials_slider").length > 0 ) {
-    $(".testimonials_slider").not(".slick-initialized").slick({
-        dots: true,
-        arrows: true,
-        // autoplay: true,
-        autoplaySpeed: 4000,
-        speed: 1200,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        // variableWidth: true,
-        // fade: true,
-        responsive: [
-            {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                arrows: false
+    // $(".testimonials_slider").not(".slick-initialized").slick({
+    //     dots: true,
+    //     arrows: true,
+    //     // autoplay: true,
+    //     autoplaySpeed: 4000,
+    //     speed: 1200,
+    //     slidesToShow: 3,
+    //     slidesToScroll: 1,
+    //     // variableWidth: true,
+    //     // fade: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 900,
+    //           settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 2,
+    //             arrows: false
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 540,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1,
+    //             arrows: false
+    //           }
+    //         }
+    //       ]
+    // });
+
+    $(".testimonials_slider").owlCarousel({
+          loop: true,
+          margin: 0,
+          dots: true,
+          nav: true,
+          // autoplay: true,
+          // autoplayTimeout: 7000,
+          responsiveClass: true,
+          // autoWidth: true,
+          // startPosition:1
+          responsive:{
+              0:{
+                  items:1,
+                  dots: true,
+                  nav: true
+              },
+              540:{
+                  items:2,
+                  dots: true,
+                  nav: true
+              },
+              901:{
+                  items:3,
+                  dots: true,
+                  nav: true
+              },
+              9999:{
+                  items:2,
+                  dots: true,
+                  nav: true
               }
-            },
-            {
-              breakpoint: 540,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false
-              }
-            }
-          ]
-    });
+          }
+        });
+
+
   }
 
     if( $(".news_slider").length > 0 ) {
-      $(".news_slider").not(".slick-initialized").slick({
+      // $(".news_slider").not(".slick-initialized").slick({
+      //     dots: true,
+      //     arrows: true,
+      //     // autoplay: true,
+      //     autoplaySpeed: 4000,
+      //     speed: 1200,
+      //     slidesToShow: 4,
+      //     slidesToScroll: 1,
+      //     variableWidth: true,
+      //     // fade: true,
+      //     responsive: [
+      //         {
+      //           breakpoint: 900,
+      //           settings: {
+      //             dots: false,
+      //             arrows: false
+      //           }
+      //         },
+      //         // {
+      //         //   breakpoint: 540,
+      //         //   settings: {
+      //         //     slidesToShow: 1,
+      //         //     slidesToScroll: 1
+      //         //   }
+      //         // }
+      //       ]
+      // });
+
+      $(".news_slider").owlCarousel({
+          loop: true,
+          margin: 0,
           dots: true,
-          arrows: true,
+          nav: true,
           // autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          variableWidth: true,
-          // fade: true,
-          responsive: [
-              {
-                breakpoint: 900,
-                settings: {
+          // autoplayTimeout: 7000,
+          responsiveClass: true,
+          autoWidth: true,
+          startPosition: 1,
+          responsive:{
+              0:{
                   dots: false,
-                  arrows: false
-                }
+                  nav: false
               },
-              // {
-              //   breakpoint: 540,
-              //   settings: {
-              //     slidesToShow: 1,
-              //     slidesToScroll: 1
-              //   }
-              // }
-            ]
-      });
+              901:{
+                  dots: true,
+                  nav: true
+              },
+              9999:{
+                  dots: true,
+                  nav: true
+              }
+          }
+        });
+
+
     }
 
     if( $(".slider_3").length > 0 ) {
-      $(".slider_3").not(".slick-initialized").slick({
+      // $(".slider_3").not(".slick-initialized").slick({
+      //     dots: true,
+      //     arrows: true,
+      //     // autoplay: true,
+      //     autoplaySpeed: 4000,
+      //     speed: 1200,
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     fade: true,
+      //     responsive: [
+      //       {
+      //         breakpoint: 900,
+      //         settings: {
+      //           arrows: false
+      //         }
+      //       }
+      //     ]
+      // });
+
+
+        $(".slider_3").owlCarousel({
+          loop: true,
+          // margin: 10,
           dots: true,
-          arrows: true,
-          // autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          fade: true,
-          responsive: [
-            {
-              breakpoint: 900,
-              settings: {
-                arrows: false
+          nav: true,
+          autoplay: true,
+          autoplayTimeout: 7000,
+          responsiveClass: true,
+          animateOut: 'fadeOut',
+          // autoWidth: true,
+          // startPosition:1
+          responsive:{
+              0:{
+                  items:1,
+                  nav:true
+              },
+              9999:{
+                  items:1,
+                  nav:true
               }
-            }
-          ]
-      });
+          }
+        });
+
     }
 
     // --------
@@ -661,23 +807,40 @@ if( $(".goods_cards_slider").length > 0 ) {
     // ---------
 
     if( $(".slider_4").length > 0 ) {
-      $(".slider_4").not(".slick-initialized").slick({
-          dots: true,
-          arrows: false,
-          // autoplay: true,
-          autoplaySpeed: 4000,
-          speed: 1200,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          fade: true
-      });
-    }
+      // $(".slider_4").not(".slick-initialized").slick({
+      //     dots: true,
+      //     arrows: false,
+      //     // autoplay: true,
+      //     autoplaySpeed: 4000,
+      //     speed: 1200,
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1,
+      //     fade: true
+      // });
 
-    $(".good_thumb_2 .pill_1").on("click", function(e) {
-      e.preventDefault();
-      parent = $(this).closest(".good_thumb_2");
-      parent.addClass("active");
-    });
+      $(".slider_4").owlCarousel({
+          loop: true,
+          // margin: 10,
+          dots: true,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 7000,
+          responsiveClass: true,
+          animateOut: 'fadeOut',
+          // autoWidth: true,
+          // startPosition:1
+          responsive:{
+              0:{
+                  items:1,
+                  // nav:true
+              },
+              9999:{
+                  items:1,
+                  // nav:true
+              }
+          }
+        });
+    }
 
   // ------------
 
@@ -745,31 +908,35 @@ if( $(".goods_cards_slider").length > 0 ) {
 
   // ------------
 
-  var countDownTime = $("#counter").attr("data-countdowntime");
-  var countDownDate = new Date(countDownTime).getTime();
+  if($("#counter").length > 0) {
 
-  var x = setInterval(function() {
+    var countDownTime = $("#counter").attr("data-countdowntime");
+    var countDownDate = new Date(countDownTime).getTime();
 
-      var now = new Date().getTime();
-      
-      var distance = countDownDate - now;
-      
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var x = setInterval(function() {
 
-      if(hours <= 9) {
-        hours = "0"+hours;
-      }
-      document.getElementById("counter").innerHTML = hours + ":"
-      + minutes + ":" + seconds;
-      
-      if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("counter").innerHTML = "Истекло";
-      }
-  }, 1000);
+        var now = new Date().getTime();
+        
+        var distance = countDownDate - now;
+        
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        if(hours <= 9) {
+          hours = "0"+hours;
+        }
+        document.getElementById("counter").innerHTML = hours + ":"
+        + minutes + ":" + seconds;
+        
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("counter").innerHTML = "Истекло";
+        }
+    }, 1000);
+
+  }
 
   // -------------
 
