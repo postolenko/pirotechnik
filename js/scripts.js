@@ -205,11 +205,11 @@ $(window).resize(function() {
   getTagsBtnParams();
   getRespSlider();
   getAnimation();
-  if(!$(".basketLink").hasClass("active")) {
-    $(".resp_bg_basket").css({
-      "display" : "none"
-    });
-  }
+  // if(!$(".basketLink").hasClass("active")) {
+  //   $(".resp_bg_basket").css({
+  //     "display" : "none"
+  //   });
+  // }
   if(!$(".search_wrapp ").hasClass("active")) {
     $(".resp_bg_search").css({
       "display" : "none"

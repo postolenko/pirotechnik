@@ -958,7 +958,8 @@ textarea:focus {
 
 #headerTop.scroll {
     /*padding: 2px 0 1px 0;*/
-    padding: 2px 0 10px 0;
+    /*padding: 2px 0 10px 0;*/
+    padding: 6px 0 7px 0;
     width: 100%;
     position: fixed;
     top: -100vh;
@@ -1104,6 +1105,7 @@ textarea:focus {
 .catalog_menu ul li a {
     display: flex;
     display: -webkit-flex;
+    min-height: 60px;
     padding: 11px 0;
     align-items: center;
     -webkit-align-items: center;
@@ -1139,15 +1141,17 @@ textarea:focus {
 
 .catalog_menu ul li a .icon_box {
     width: 66px;
+    height: 40px;
     position: relative;
+    top: 4px;
 }
 
 .catalog_menu ul li a .icon_box img {
     display: block;
     width: auto;
     height: auto;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 80%;
+    max-height: 80%;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -1177,12 +1181,32 @@ textarea:focus {
     background-position: center;
 }
 
+.catalog_menu ul li a.parent_sub:after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    border: none;
+    background-color: transparent;
+    background-image: url(img/right_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+}
+
 .catalog_menu ul li .right_arr {
     position: absolute;
     top: 50%;
     right: 25px;
     transform: translate(0, -50%);
     -webkit-transform: translate(0, -50%);
+    z-index: 3;
+    cursor: pointer;
 }
 
 .catalog_menu ul li {
@@ -1598,7 +1622,7 @@ textarea:focus {
 }
 
 .basket_link_wrapp {
-    min-width: 115px;
+    min-width: 130px;
     position: relative;
 }
 
@@ -2112,31 +2136,7 @@ textarea:focus {
     -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
     -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
-    /*height: 0;*/
-/*    overflow: hidden;
-    position: relative;
-    top: 0;
-    left: 0;*/
-/*    -webkit-transition-property: height !important;
-    -webkit-transition-duration: .3s;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-property: height !important;
-    -moz-transition-duration: .3s;
-    -moz-transition-timing-function: ease;
-    -ms-transition-property: height !important;
-    -ms-transition-duration: .3s;
-    -ms-transition-timing-function: ease;
-    -o-transition-property: height !important;
-    -o-transition-duration: .3s;
-    -o-transition-timing-function: ease;
-    transition-property: height !important;
-    transition-duration: .3s;
-    transition-timing-function: ease;*/
 }
-
-/*.dropdown_box_2.active .dropdown_list {
-    height: auto;
-}*/
 
 .dropdown_box_2 .dropdown_title:before {
     display: none;
@@ -2254,6 +2254,7 @@ textarea:focus {
 .catalog_menu_resp li a {
     display: flex;
     display: -webkit-flex;
+    min-height: 56px;
     padding-left: 18px;
     padding-right: 32px;
     border-bottom: 1px solid #F8F9FA;
@@ -2272,8 +2273,9 @@ textarea:focus {
 
 .catalog_menu_resp li a .icon_box {
     width: 43px;
-    height: 55px;
+    height: 40px;
     position: relative;
+    top: 9px;
 }
 
 .catalog_menu_resp li a .icon_box img {
@@ -2281,6 +2283,7 @@ textarea:focus {
     width: auto;
     height: auto;
     max-width: 100%;
+    max-height: 100%;
     position: absolute;
     top: 50%;
     right: 0;
@@ -2294,6 +2297,7 @@ textarea:focus {
     align-self: center;
     -webkit-align-self: center;
     padding-left: 15px;
+    width: calc(100% - 43px);
 }
 
 .main_nav_resp {
@@ -2503,8 +2507,11 @@ textarea:focus {
 .good_thumb .img_box {
     height: 230px;
     position: relative;
-    background-size: cover;
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .thumbs_slider .good_thumb .img_box {
