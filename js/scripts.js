@@ -572,10 +572,10 @@ if( $(".goods_cards_slider").length > 0 ) {
       });
 
       $(document).on('mouseenter', '.good_thumb_2', function() {
-        $( this ).find(".dropdown_footer").stop().slideDown(200);
+        $( this ).find(".dropdown_footer").stop().slideDown(300);
       });
       $(document).on('mouseleave', '.good_thumb_2', function() {
-        $( this ).find(".dropdown_footer").stop().slideUp(200);
+        $( this ).find(".dropdown_footer").stop().slideUp(300);
       });
 
       $(document).on('click', '.good_thumb_2 .pill_1', function(e) {
