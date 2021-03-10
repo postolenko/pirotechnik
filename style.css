@@ -3008,7 +3008,8 @@ textarea:focus {
 }
 
 .good_thumb_2 {
-    width: 226px;
+    /*width: 226px;*/
+    width: 221px;
     padding: 5px 0 2px 0;
     background: #FFFFFF;
     border: 1px solid #eff2f5;
