@@ -2498,7 +2498,7 @@ textarea:focus {
 }
 
 .good_thumb_main .dropdown_footer {
-    display: block !important;
+    display: block;
 }
 
 .good_thumb_main .hover_box {
@@ -3008,7 +3008,6 @@ textarea:focus {
 }
 
 .good_thumb_2 {
-    /*width: 226px;*/
     width: 221px;
     padding: 5px 0 2px 0;
     background: #FFFFFF;
@@ -3229,6 +3228,10 @@ textarea:focus {
 }
 
 .good_thumb_2.active .count_box_2 {
+    height: 54px;
+}
+
+.good_thumb_main.active .count_box_2 {
     height: 54px;
 }
 
@@ -3845,7 +3848,8 @@ textarea:focus {
 }
 
 .news_slider {
-    margin: 0 -15px;
+    /*margin: 0 -15px;*/
+    margin-left: -10px;
 }
 
 /*.news_slider .slick-arrow {
@@ -3880,7 +3884,7 @@ textarea:focus {
 
 .news_thumb {
     display: block;
-    width: 270px;
+    width: 268px;
 }
 
 .news_thumb .img_box_wrapp {
