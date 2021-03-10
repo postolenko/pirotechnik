@@ -530,6 +530,37 @@ $(document).ready(function() {
     //       }
     //     ]
     // });
+
+    $(".thumbs_slider").owlCarousel({
+      // loop: true,
+      dots: true,
+      nav: false,
+      responsiveClass: true,
+      autoWidth: false,
+      // startPosition:1
+      animateOut: 'fadeOut',
+      responsive:{
+          0:{
+              // items:1,
+              autoWidth: true,
+              dots: true,
+              nav: false
+          },
+          901:{
+              // items:2,
+              autoWidth: true,
+              dots: true,
+              nav: false
+          },
+          9999:{
+              // items:2,
+              autoWidth: false,
+              dots: true,
+              nav: false
+          }
+      }
+    });
+
   }
   
 if( $(".goods_cards_slider").length > 0 ) {

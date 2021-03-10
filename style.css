@@ -2475,11 +2475,34 @@ textarea:focus {
     position: relative;
 }
 
+.thumbs_slider .owl-dots {
+    position: relative;
+    top: 10px;
+}
+
+.good_thumb_wrapp.good_thumb_wrapp_2 {
+    width: 280px;
+    margin: 0 0 243px;
+}
+
 .good_thumb {
+    width: 267px;
     padding: 17px 20px 18px 20px;
     border: 1px solid #F8F9FA;
     border-radius: 10px;
     -webkit-border-radius: 10px;
+}
+
+.good_thumb_main {
+    padding: 17px 0 18px 0;
+}
+
+/*.good_thumb_main .pills_wrapp {
+    display: block;
+}*/
+
+.good_thumb_main .dropdown_footer {
+    display: block !important;
 }
 
 .good_thumb_title {
