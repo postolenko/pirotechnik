@@ -2477,12 +2477,12 @@ textarea:focus {
 
 .thumbs_slider .owl-dots {
     position: relative;
-    top: 10px;
+    top: -10px;
 }
 
 .good_thumb_wrapp.good_thumb_wrapp_2 {
     width: 280px;
-    margin: 0 0 243px;
+    margin: 0 0 163px;
 }
 
 .good_thumb {
@@ -2494,15 +2494,15 @@ textarea:focus {
 }
 
 .good_thumb_main {
-    padding: 17px 0 18px 0;
+    padding: 17px 0 4px 0;
 }
-
-/*.good_thumb_main .pills_wrapp {
-    display: block;
-}*/
 
 .good_thumb_main .dropdown_footer {
     display: block !important;
+}
+
+.good_thumb_main .hover_box {
+    display: none;
 }
 
 .good_thumb_title {
@@ -2532,10 +2532,6 @@ textarea:focus {
     color: #FFFFFF;
 }
 
-.tag.orange {
-
-}
-
 .tag.transparent {
     background: #fff;
     border: 1px solid #FD401B;
@@ -2546,8 +2542,6 @@ textarea:focus {
 .good_thumb .img_box {
     height: 230px;
     position: relative;
-    /*background-size: cover;*/
-    /*background-position: center;*/
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -2653,7 +2647,7 @@ textarea:focus {
     -webkit-justify-content: center;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 65px -12px;
+    margin: 50px -12px 65px -12px;
 }
 
 .categpries_thumbs > div {

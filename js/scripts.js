@@ -532,7 +532,7 @@ $(document).ready(function() {
     // });
 
     $(".thumbs_slider").owlCarousel({
-      // loop: true,
+      loop: true,
       dots: true,
       nav: false,
       responsiveClass: true,
