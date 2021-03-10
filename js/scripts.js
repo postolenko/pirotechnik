@@ -832,7 +832,7 @@ if( $(".goods_cards_slider").length > 0 ) {
     e.preventDefault();
     tagsName = $(this).attr("data-tagsbtn");
     tags = $("[data-tags = '"+tagsName+"']").find(".tags_list_2");
-    defaultHeight = parseInt( $("[data-tags = '"+tagsName+"']").attr("def-height") );
+    defaultHeight = parseInt( $("[data-tags = '"+tagsName+"']").attr("data-defheight") );
     if( $(this).hasClass("active") ) {
       $("[data-tags = '"+tagsName+"']").animate({
         "height" : defaultHeight + "px"
