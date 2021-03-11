@@ -747,7 +747,7 @@
 		opacity: 0 !important;
 	}
 
-	.tags_list__wrapp .mCSB_scrollTools.mCSB_2_scrollbar.mCS-light.mCSB_scrollTools_horizontal {
+	.tags_list__wrapp .mCSB_draggerContainer {
 		opacity: 0 !important;
 	}
 
