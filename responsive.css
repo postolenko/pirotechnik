@@ -391,14 +391,13 @@
 	}
 
 	.sub_menu_resp li .right_arr {
-		width: 27px;
-		height: 27px;
+		width: 43px;
+		height: 100%;
 		cursor: pointer;
-		margin-top: -13px;
 		position: absolute;
-		top: 50%;
-		right: 17px;
-		z-index: 2;
+		top: 0;
+		right: 0px;
+		z-index: 4;
 	}
 
 	#resp_nav {

@@ -2181,21 +2181,20 @@ a:active {
 }
 
 .catalog_menu_resp li .right_arr {
-    width: 27px;
-    height: 27px;
+    width: 43px;
+    height: 100%;
     cursor: pointer;
-    margin-top: -13px;
     position: absolute;
-    top: 50%;
-    right: 17px;
-    z-index: 2;
+    top: 0;
+    right: 0px;
+    z-index: 4;
 }
 
 .catalog_menu_resp li a .icon_box {
-    width: 43px;
-    height: 40px;
+    width: 33px;
+    height: 28px;
     position: relative;
-    top: 9px;
+    top: 14px;
 }
 
 .catalog_menu_resp li a .icon_box img {
@@ -2217,7 +2216,7 @@ a:active {
     align-self: center;
     -webkit-align-self: center;
     padding-left: 15px;
-    width: calc(100% - 43px);
+    width: calc(100% - 33px);
 }
 
 .main_nav_resp {
