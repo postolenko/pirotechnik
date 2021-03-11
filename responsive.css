@@ -711,12 +711,31 @@
 	}
 
 	.tags_list__wrapp {
-		height: 70px !important;
+		height: 90px !important;
 	}
 
-	.tags_list_2 {
-		height: 70px !important;
-		margin-left: -10px;
+	.container {
+	  display: flex;
+	  flex-flow: column nowrap;
+	  width: 100%;
+	  height: 100px;
+	}
+
+	.container ul,
+	.container .line {
+	  display: flex;
+	  align-items: flex-start;
+	  align-content: flex-start;
+	  width: 100%;
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	.container li {
+	  display: inline-block;
+	  white-space: nowrap;
+	  padding: 5px 5px;
 	}
 
 	.tag_2 {
@@ -724,11 +743,11 @@
 	    white-space: nowrap;
 	}
 
-	.tags_list_2 li {
-	    padding: 5px 10px;
+	.scrollbar_900 .mCSB_scrollTools.mCSB_2_scrollbar.mCS-light.mCSB_scrollTools_horizontal {
+		opacity: 0 !important;
 	}
 
-	.scrollbar_900 .mCSB_scrollTools.mCSB_2_scrollbar.mCS-light.mCSB_scrollTools_horizontal {
+	.tags_list__wrapp .mCSB_scrollTools.mCSB_2_scrollbar.mCS-light.mCSB_scrollTools_horizontal {
 		opacity: 0 !important;
 	}
 
