@@ -87,7 +87,7 @@ function getTagsBtnParams() {
     tagsName = $(this).attr("data-tags");
     if(!$("[data-tagsbtn = '"+tagsName+"']").hasClass("active")) {
       tagsDropdown = $(this).find(".tags_list_2");
-      defaultHeight = $(this).attr("def-height");
+      defaultHeight = $(this).attr("data-defheight");
       $(this).css({
         "height" : defaultHeight + "px"
       });
@@ -441,6 +441,10 @@ $(document).ready(function() {
                   items:1,
                   nav:false
               },
+              900:{
+                  items:1,
+                  nav:true
+              },
               9999:{
                   items:1,
                   nav:true
@@ -506,12 +510,12 @@ if( $(".goods_cards_slider").length > 0 ) {
       });
 
       $(document).on('mouseenter', '.good_thumb', function() {
-        if($(this).hasClass("good_thumb_2")) {
+        if($(this).hasClass("good_thumb_2") && bodyWidth > 900) {
           $( this ).find(".dropdown_footer").stop().slideDown(300);
         }
       });
       $(document).on('mouseleave', '.good_thumb', function() {
-        if($(this).hasClass("good_thumb_2")) {
+        if($(this).hasClass("good_thumb_2") && bodyWidth > 900) {
           $( this ).find(".dropdown_footer").stop().slideUp(300);
         }
       });
@@ -525,18 +529,6 @@ if( $(".goods_cards_slider").length > 0 ) {
         });
         parent.addClass("active");
       });
-
-      // $(document).on('mouseenter', '.good_thumb', function() {
-      //   if($(this).hasClass("good_thumb_main") && bodyWidth <= 900 ) { 
-      //     $( this ).find(".dropdown_footer").stop().slideDown(300);
-      //   }
-      // });
-
-      // $(document).on('mouseleave', '.good_thumb', function() {
-      //   if($(this).hasClass("good_thumb_main") && bodyWidth <= 900 ) { 
-      //     $( this ).find(".dropdown_footer").stop().slideUp(300);
-      //   }
-      // });
 
       $(document).on('click', '.good_thumb_main .pill_1', function(e) {
         if(bodyWidth <= 900 ) {
@@ -695,36 +687,21 @@ if( $(".goods_cards_slider").length > 0 ) {
     // ---------
 
     if( $(".slider_4").length > 0 ) {
-      // $(".slider_4").not(".slick-initialized").slick({
-      //     dots: true,
-      //     arrows: false,
-      //     // autoplay: true,
-      //     autoplaySpeed: 4000,
-      //     speed: 1200,
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //     fade: true
-      // });
 
       $(".slider_4").owlCarousel({
           loop: true,
-          // margin: 10,
           dots: true,
           nav: false,
           autoplay: true,
           autoplayTimeout: 7000,
           responsiveClass: true,
           animateOut: 'fadeOut',
-          // autoWidth: true,
-          // startPosition:1
           responsive:{
               0:{
-                  items:1,
-                  // nav:true
+                  items:1
               },
               9999:{
-                  items:1,
-                  // nav:true
+                  items:1
               }
           }
         });
